@@ -491,3 +491,81 @@
         display: none;
     }
 }
+
+
+@media only screen and (min-width: 3500px)and (max-width:4500px) {
+    mat-sidenav-container {
+      position: relative;
+      flex-direction: row;
+      height: 100%;
+    }
+    .error_find {
+        color: red;
+        font-size: large;
+        margin-top: 15%;
+        margin-left: 5%;
+    }
+
+    .matt-card {
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        width: 100%;
+    }
+
+    .search {
+        height: 1vh;
+        width: 400px;
+        border-radius: 5px;
+        margin-right: 20px;
+    }
+
+    .row {
+        display: flex;
+        width: 95%;
+        justify-content: space-between;
+        height:30vh;
+    }
+
+    .col {
+        margin: 5px;
+        width: 100%;
+
+    }
+
+
+
+    .commission {
+        display: flex;
+        width: auto;
+        height: auto;
+        padding: 5px;
+    }
+
+    .graphs {
+        height: auto;
+        width: auto;
+        margin: 0px 0px 0px 10px;
+    }
+
+    .compol {
+        float: right;
+        width: 400px;
+        margin: 40px 0px 10px 0px;
+    }
+
+    .coms {
+        margin: 0px 0px 0px 20px;
+    }
+
+    .poli {
+        margin: 0px 0px 0px 20px;
+        display: flex;
+    }
+
+    .mat-toolbar {
+        visibility: hidden;
+        display: none;
+    }
+    
+  }
