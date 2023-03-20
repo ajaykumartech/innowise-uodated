@@ -1,0 +1,157 @@
+table {
+    width: 100%;
+}
+
+.filter-class {
+    display: flex
+}
+
+.mat-elevation-z8 {
+    box-shadow: 0px 0px 0px 0px;
+    width: 100%;
+
+}
+
+th {
+    color: rgb(145, 143, 143);
+}
+
+:host {
+    display: block;
+    margin-top: 1rem;
+}
+
+.info-text {
+    text-align: center;
+}
+
+.post-image {
+
+    width: 50%;
+}
+
+
+.tableHeaderCellDiv {
+    resize: horizontal;
+    overflow: hidden;
+}
+
+
+td {
+    padding-left: 10px;
+    border-bottom: 1px solid rgb(232, 230, 230);
+}
+
+.mat-mdc-paginator-page-size {
+    display: none !important;
+}
+
+.maxwidth {
+    margin-right: -10px;
+    width: 22vh !important;
+}
+
+.roww {
+    cursor: pointer;
+}
+
+
+@media only screen and (min-width: 320px)and (max-width:768px) {
+    .filter-class {
+        width: auto;
+        display: flex;
+        overflow-x: scroll;
+    }
+
+    .mat-elevation-z8 {
+        box-shadow: 0px 0px 0px 0px;
+        width: 100%;
+
+    }
+
+    .res-table {
+        width: auto;
+        overflow-x: scroll;
+    }
+
+    .demo-paginator {
+        display: flex;
+    }
+
+}
+
+
+.demo-paginator {
+    display: flex;
+}
+
+@media only screen and (min-width: 768px)and (max-width:1024px) {
+    .filter-class {
+        width: auto;
+        display: flex;
+        overflow-x: scroll;
+    }
+
+    .mat-elevation-z8 {
+        box-shadow: 0px 0px 0px 0px;
+        width: 100%;
+
+    }
+
+    .res-table {
+        width: auto;
+        overflow-x: scroll;
+    }
+
+    .demo-paginator {
+        display: flex;
+    }
+
+}
+
+@media only screen and (min-width: 1024px)and (max-width:1500px) {
+    .filter-class {
+        width: auto;
+        display: flex;
+        overflow-x: scroll;
+    }
+
+    .mat-elevation-z8 {
+        box-shadow: 0px 0px 0px 0px;
+        width: 100%;
+
+    }
+
+    .res-table {
+        width: auto;
+        overflow-x: scroll;
+    }
+}
+
+@media only screen and (min-width: 1500px)and (max-width:2000px) {
+    .filter-class {
+        width: auto;
+        display: flex;
+
+    }
+
+    .mat-elevation-z8 {
+        box-shadow: 0px 0px 0px 0px;
+        width: 100%;
+
+    }
+
+}
+
+@media only screen and (min-width: 2000px)and (max-width:4200px) {
+    .search {
+        height: 3vh;
+        width: 15vw;
+        border-radius: 5px;
+        margin-right: 20px;
+    }
+
+    .res-table {
+        width: auto;
+    }
+}

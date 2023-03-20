@@ -1,0 +1,12 @@
+<mat-card *ngFor="let data of intelligenceData" class="matcard">
+    <mat-card-header style="justify-content: center; margin-top: 10px;">
+        <div class="card-image">
+            <img [src]="data.Base64Image">
+        </div>
+    </mat-card-header>
+    <mat-card-title class="card-text">{{data.Title}}</mat-card-title>
+    <mat-card-content class="card-subtitle">{{data.Subtitle}}</mat-card-content>
+    <mat-card-actions style="justify-content: center; ">
+        <button (click)="onclickIntelligence(data.ButtonRedirectURL)" mat-button class="button-container"_target="blank" style="color: white;">{{data.ButtonTitle}}</button>
+    </mat-card-actions>
+</mat-card>

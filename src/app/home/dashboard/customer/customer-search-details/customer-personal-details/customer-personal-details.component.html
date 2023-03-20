@@ -1,0 +1,21 @@
+<div class="cust-person" *ngIf="personalData" >
+   
+  <div class="ico-name">
+    <span *ngIf="personalData.Base64Image!=null; else elseblock"><img [src]="personalData.Base64Image" width="50" style="border-radius: 28px;vertical-align: middle;margin:0px 15px;color:gray;background-color: rgb(255, 255, 255);"/></span>
+  <ng-template #elseblock>
+    <span><mat-icon style="vertical-align: middle;margin:0px 10px;color:gray;background-color: rgb(255, 255, 255);">account_circle</mat-icon></span>
+  </ng-template>    
+  <h2>{{personalData.ClientName}}</h2>
+  </div>
+  
+  <div class="buttons">
+    <div><button mat-raised-button style="background-color: #0085FF;color: white;">Add Policy</button></div>
+    <div style="margin-left:25px">
+      <span style="color: #969696;font-size: 13px">Account balance:</span>
+      <p style="font-weight: bold; font-weight: 300px; text-align: right; color:black; font-size: medium;">{{personalData.CustomerMValue}}</p>
+    </div>
+    <div style="height: 35px; width: 35px; margin-left: 20px; border-radius: 25px; display: flex; justify-content: center; align-items: center;  background-color: rgb(255, 255, 255); border: 1px solid rgb(216, 213, 213);">
+      <mat-icon style="color: #acabab; cursor: pointer;  font-size: 25px; padding-right: 5px;padding-left: 4px;">more_horiz</mat-icon>
+    </div>
+</div>
+</div>

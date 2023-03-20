@@ -1,0 +1,86 @@
+<div class="main-div">
+  <div class="title">LogIn</div>
+  <div class="wrapper">
+    <form [formGroup]="inputsForm" (ngSubmit)="save()">
+      <div style="height: 25px;padding: 10px 5px;text-align: center;"> <p class="validations">{{error}}</p></div>
+      <!--                      Username                     -->
+      <div class="row form-group">
+        <label>Username</label>
+        <div class="input-wrapper">
+          <input type="text" placeholder=" &#xF002; Placeholder" name="UserNameOrEmail" [(ngModel)]="inputData" 
+          formControlName="UserNameOrEmail" (keyup.enter)="onKeyUp($event)"  (blur)="onKeyUp($event)" required style="font-family:Arial, FontAwesome"
+          class="form-control">
+         <i class="fas fa-times-circle" *ngIf="inputData" (click)="clear()" style="font-size: 1.8vh; margin-right: 10px" ></i>
+        </div>
+        <div class="headerror">
+          <p class="validation" *ngIf="inputsForm.controls['UserNameOrEmail'].dirty && inputsForm.hasError('required', 'UserNameOrEmail')">
+          *Username is required</p>
+        </div>
+      </div>
+      <!--                      Password                     -->
+      <div class="row">
+        <label>Password</label>
+        <div class="input-wrapper">
+          <input [type]="changeType? 'Password':'text'" placeholder=" &#xF002; Placeholder" name="Password" formControlName="Password" required [(ngModel)]="inputdata"
+          class="form-control" style="font-family:Arial, FontAwesome">
+        <i (click)= "viewpass()" *ngIf="inputdata" [ngClass]= "visible? 'fas fa-eye-slash' : 'fas fa-eye'" ></i>
+        </div>
+        <div class="headerror">
+          <p class="validation"
+            *ngIf="inputsForm.controls['Password'].dirty && inputsForm.hasError('required', 'Password')">*Password is required</p>
+        </div>
+      </div>
+
+      <div style="height: 20px;padding-right: 10px">
+        <a href="#">Reset Password</a>
+      </div>
+
+      <!--                      Environment                     -->
+      <div class="row1" >     
+        <label>Environment</label>
+        <div *ngIf="!color; else noge" >
+            <input class="tttt" [disabled]="!color" />
+        </div>     
+        <ng-template #noge>
+            <select name="EnvironmentID" formControlName="EnvironmentID" placeholder="Placeholder" required style="width: 100%;height: 4vh;background-color: #fff;">
+                <option *ngIf="color" style="width: 100%;">---Select----</option>
+                <option style="width: 100%;" *ngFor="let item of data" >{{ item.organizationEnvironmentName}}</option>
+           </select>
+           <div class="err-msg" *ngIf="isFormSaved  && regCard['EnvironmentID'].errors">
+            <div *ngIf="regCard['EnvironmentID'].errors['EnvironmentID']">Environment is required</div>
+        </div>
+        </ng-template>
+    </div>
+
+      <div style="text-align: right;position: relative;color: white;">
+        <button  mat-raised-button color="primary" class="mat-raised-button"  [disabled]="!inputsForm.valid">
+            Login
+        </button>
+    </div>
+      <!-- [disabled]="!inputenv" -->
+
+      <br><br><br>
+      <p style="text-align: center;">Or,</p>
+    </form>
+
+
+    <div class="sec-div">
+      <div class="wrapper1">
+        <div class="row">
+          <button class="btn2"><span style="font-size: 2vh" class="fab fa-google fa-1x"></span> Sign in with Google</button>
+        </div>
+      </div><br>
+      <div class="wrapper1">
+        <div class="row">
+          <button class="btn2"><span style="font-size: 2vh" class="fab fa-apple"></span> Continue with Apple</button>
+        </div>
+      </div><br>
+      <div class="wrapper1">
+        <div class="row">
+          <button class="btn2" style="margin-bottom: 25px;"><span class="fab fa-microsoft" style="font-size: 2vh"></span> Sign in with
+            Microsoft</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

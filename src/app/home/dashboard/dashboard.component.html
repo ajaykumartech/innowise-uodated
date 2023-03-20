@@ -1,0 +1,85 @@
+<mat-sidenav-container>
+    <mat-sidenav class="sidenav" #sidenav [mode]="mode" [opened]="openSidenav">
+        <mat-toolbar>
+            <img src="https://i.ibb.co/fD60zpT/Screenshot-2023-01-27-154639.png" height="60" />
+            <h3 class="tooll">Innowise LLC<br />
+                <span style="color: #969696;font-weight: 300;font-size: 15px;">Katy, TX</span>
+            </h3>
+        </mat-toolbar>
+        <mat-list role="list">
+            <div class="sidenav-title">MAIN MENU</div>
+
+            <div class="sidee" (click)="val1()" [ngClass]="{'sidee2': href == null || href =='dash'}" routerLink="dash">
+                <mat-icon [ngClass]="{'sidee3': href == null || href =='dash'}">dashboard</mat-icon>
+                <span class="sidee1">Dashboard</span>
+            </div>
+
+            <div class="sidee" (click)="val1()" [ngClass]="{'sidee2': href == null || href =='company'}" routerLink="">
+                <mat-icon [ngClass]="{'sidee3': href == null || href =='company'}">apps</mat-icon>
+                <span class="sidee1">Company</span>
+            </div>
+
+            <div class="sidee" (click)="val1()" [ngClass]="{'sidee2': href == null || href =='customer'}"
+                routerLink="customer">
+                <mat-icon [ngClass]="{'sidee3': href == null || href =='customer'}">security</mat-icon>
+                <span class="sidee1">Customer</span>
+            </div>
+
+            <div class="sidee" (click)="val1()" [ngClass]="{'sidee2': href == null || href =='reports'}" routerLink="">
+                <mat-icon [ngClass]="{'sidee3': href == null || href =='reports'}">assignment</mat-icon>
+                <span class="sidee1">Reports</span>
+            </div>
+
+            <div class="sidee" (click)="val1()" [ngClass]="{'sidee2': href == null || href =='commission'}"
+                routerLink="">
+                <mat-icon [ngClass]="{'sidee3': href == null || href =='commission'}">supervised_user_circle</mat-icon>
+                <span class="sidee1">Commission</span>
+            </div>
+
+            <div class="sidee" (click)="val1()" [ngClass]="{'sidee2': href == null || href =='vendor'}" routerLink="">
+                <mat-icon [ngClass]="{'sidee3': href == null || href =='vendor'}">work</mat-icon>
+                <span class="sidee1">Vendor</span>
+            </div>
+
+            <div class="sidee" (click)="val1()" [ngClass]="{'sidee2': href == null || href =='proposals'}"
+                routerLink="">
+                <mat-icon [ngClass]="{'sidee3': href == null || href =='proposals'}">message</mat-icon>
+                <span class="sidee1">Proposals</span>
+            </div>
+
+            <div class="sidenav-title">WORKFLOWS</div>
+            <div class="sidee" (click)="val1()" [ngClass]="{'sidee2': href == null || href =='leads'}" routerLink="">
+                <mat-icon [ngClass]="{'sidee3': href == null || href =='leads'}">burst_mode</mat-icon>
+                <span class="sidee1">Leads</span>
+            </div>
+
+            <div class="sidee" (click)="val1()" [ngClass]="{'sidee2': href == null || href =='workflows'}"
+                routerLink="">
+                <mat-icon [ngClass]="{'sidee3': href == null || href =='workflows'}">devices</mat-icon>
+                <span class="sidee1">Workflows</span>
+            </div>
+
+            <div class="sidee" (click)="val1()" [ngClass]="{'sidee2': href == null || href =='mytasks'}" routerLink="">
+                <mat-icon [ngClass]="{'sidee3': href == null || href =='mytasks'}">list_alt</mat-icon>
+                <span class="sidee1">My Tasks</span>
+            </div>
+
+            <div class="sidenav-title">General</div>
+            <div class="sidee" (click)="val1()" [ngClass]="{'sidee2': href == null || href =='settings'}" routerLink="">
+                <mat-icon [ngClass]="{'sidee3': href == null || href =='settings'}">settings</mat-icon>
+                <span class="sidee1">Settings</span>
+            </div>
+
+        </mat-list>
+    </mat-sidenav>
+    <mat-sidenav-content>
+        <mat-card-content>
+            <button mat-icon-button style="margin-left: 2vh;margin-top: 0px;" (click)='sidenav.toggle()' [ngClass]="showToggle">
+                <mat-icon>menu</mat-icon>
+            </button>
+            <div>
+                <router-outlet></router-outlet>
+            </div>
+        </mat-card-content>
+    </mat-sidenav-content>
+</mat-sidenav-container>

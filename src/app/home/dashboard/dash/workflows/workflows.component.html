@@ -1,0 +1,47 @@
+<mat-card class="second-card" *ngIf="workFlowALLData">
+
+    <div class="mat-header">
+        <div>
+            <mat-card-title style="font-weight: 500;">Workflows</mat-card-title>
+        </div>
+        <div><a mat-stroked-button routerLink="../events/1" class="button-stoked">See Active
+                Workflows<i class='fas fa-angle-right' style='font-size: 15px;color: #969696; padding-left: 10px;'></i>
+            </a></div>
+    </div>
+
+    <mat-card-content>
+        <div class="secondcard-div">
+
+            <div class="secondcard1-div" *ngFor="let workflow of workFlowALLData.Workflows">
+                <div>
+                    <h1 style="font-size: 28px;font-weight: 500;">{{workflow.Summary}}</h1>
+                    <p style="color: #969696;margin-top: 8px;">{{workflow.WorkflowName}}</p><br>
+                    <div *ngFor="let data of workflow.Items;let i=index">
+                        <div class="workflow-div" *ngIf="i<5">
+                            <div style="color: white; border:none; border-radius: 10px; height: 25px;width:40px"
+                                *ngIf="data.Count.length<4; else other">
+                                <button
+                                    style="background-color: #969696; color: white; border:none; border-radius: 10px; height: 25px;width:auto">{{data.Count}}</button>
+                            </div>
+
+                            <ng-template #other>
+                                <div style="color: white; border:none; border-radius: 10px; height: 25px;width:40px">
+                                    <button [matTooltip]="data.Count" matTooltipPosition="left"
+                                        style="background-color: #969696; color: white; border:none; border-radius: 10px; height: 25px;width:auto">{{data.Count.slice(0,3)}}..</button>
+                                </div>
+                            </ng-template>
+
+                            <h3 style="margin-left: 5px; "> {{data.ItemInfo}}<i class='fas fa-angle-right'
+                                    style='font-size:15px; color: #969696; padding-left: 10px;'></i>
+                            </h3>
+                        </div>
+                    </div>
+                </div>
+                <div *ngIf="workflow.Items.length > 1">
+                    <div (click)="openDialog(workflow)"
+                        style="color: #0085FF;font-size: 15px;margin-top: 1.5vh;cursor: pointer;">See all</div>
+                </div>
+            </div>
+        </div>
+    </mat-card-content>
+</mat-card>

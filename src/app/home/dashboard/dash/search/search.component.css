@@ -1,0 +1,54 @@
+.mat-mdc-text-field-wrapper.mdc-text-field--outlined .mat-mdc-form-field-infix {
+    padding-top: 3px;
+}
+
+.mat-mdc-form-field-flex {
+    height: 4vh;
+}
+
+.mat-mdc-form-field-input-control {
+    margin-top: 0.3vh;
+}
+
+.mat-mdc-text-field-wrapper {
+    width: 100% !important;
+}
+
+.main {
+    display: flex;
+    margin: 20px 20px 10px 0px;
+}
+
+@media only screen and (min-width: 300px)and (max-width:1200px) {
+    .main {
+        display: block;
+    }
+}
+
+@media only screen and (min-width: 430px)and (max-width:2000px){
+
+    .widthh{
+        width: 40svw;
+    }
+}
+
+@media only screen and (min-width: 400px)and (max-width:475px){
+
+    .widthh{
+        width: 30svw!important;
+    }
+}
+
+@media only screen and (min-width: 800px)and (max-width:957px){
+
+    .widthh{
+        width: 28svw!important;
+    }
+}
+
+@media only screen and (min-width: 900px)and (max-width:957px){
+
+    .widthh{
+        width: 35svw!important;
+    }
+}

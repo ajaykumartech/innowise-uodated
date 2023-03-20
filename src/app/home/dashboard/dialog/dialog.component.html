@@ -1,0 +1,42 @@
+<!--      myTasks       -->
+<div class="dialog" *ngIf="myTasks">
+    <h3 style=" color: black;text-align: center;"> {{data.Title}} </h3>
+    <hr />
+    <div *ngFor="let data of myTasks">
+        <div *ngIf="data.ChecklistStatus=='Not Completed';else other">
+            <h3 style=" color: #969696;">
+                <i class="fas fa-circle-check" style="color: #969696; padding-right: 5px"></i>
+                {{data.ChecklistTitle}}
+            </h3>
+        </div>
+        <ng-template #other>
+            <h3 style=" color: #969696;">
+                <i class="fas fa-circle-check" style="color: #02DE5A; padding-right: 5px"></i>
+                {{data.ChecklistTitle}}
+            </h3>
+        </ng-template>
+    </div>
+</div>
+
+
+<!--      workflow       -->
+<div class="dialog" *ngIf="workFlows1">
+    <h3 style=" color: black;text-align: center;"> {{data.WorkflowName}} </h3>
+    <hr />
+    <div class="workflow-div" *ngFor="let data of workFlows1; " style="display: flex;">
+        <button
+            style="background-color: #969696; color: white; border:none; border-radius: 10px; height: 3vh;">{{data.Count}}</button>
+        <h3 style="margin-left: 12px; "> {{data.ItemInfo}}<i class='fas fa-angle-right'
+                style='font-size:18px; color: #969696; padding-left: 10px;'></i>
+        </h3>
+    </div>
+</div>
+
+<!--      Notifications       -->
+<div class="dialog" *ngIf="messages">
+    <h3 style=" color: black;text-align: center;"> Message </h3>
+    <hr />
+    <div class="workflow-div" style="display: flex;">
+        <h3 style="margin-left: 12px; "> {{messages}}</h3>
+    </div>
+</div>

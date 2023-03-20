@@ -1,0 +1,27 @@
+.mat-mdc-text-field-wrapper.mdc-text-field--outlined .mat-mdc-form-field-infix {
+    padding-top: 3px;
+}
+
+.mat-mdc-form-field-flex {
+    height: 4vh;
+}
+
+.mat-mdc-form-field-input-control {
+    margin-top: 0.3vh;
+}
+
+.mat-mdc-text-field-wrapper {
+    width: 100% !important;
+}
+
+.main {
+    display: flex;
+    margin: 20px 20px 10px 0px;
+}
+
+@media only screen and (min-width: 300px)and (max-width:1200px) {
+    .main {
+        display: block;
+    }
+
+}

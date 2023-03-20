@@ -1,0 +1,200 @@
+<div class="dialog">
+    <form [formGroup]="inputsForm" (ngSubmit)="save()">
+        <div class="first-row">
+            <div class="first-row-div1">
+                <mat-form-field appearance="outline" style="width: 150px;">
+                    <mat-icon matTextPrefix style="vertical-align: middle;padding-right: 5px;font-size: 20px;color: #0085FF;">assignment</mat-icon>
+                    <mat-select placeholder="Customer" style="font-size: 15px;" name="customer" formControlName="customer">
+                        <mat-option value="Customer">
+                            Customer
+                        </mat-option>
+                        <mat-option value="Agent">
+                            Agent
+                        </mat-option>
+                    </mat-select>
+                </mat-form-field>
+            </div>
+            <div>
+                <input type="text" name="customerName" formControlName="customerName" />
+            </div>
+        </div>
+        <!-- <div class="second-row">
+            <mat-form-field appearance="outline" class="second-row-input">
+                <mat-select [(ngModel)]="selectedOption1" name="option" class="select-class">
+                  <mat-option value="option1">TXC15447788956623, 3/5/2023, 3/5/2024, Home</mat-option>
+                  <mat-option value="option2">Option 2</mat-option>
+                  <mat-option value="option3">Option 3</mat-option>
+                </mat-select>
+              </mat-form-field>
+        </div>
+        <div class="third-row">
+            <mat-form-field appearance="outline" class="third-row-input">
+                <mat-select  [(ngModel)]="selectedOption2" name="option" class="select-class1">
+                  <mat-option value="option1">Effective - 2/5/2023, AutoDownload, RWL, 1/5/2023</mat-option>
+                  <mat-option value="option2">Option 2</mat-option>
+                  <mat-option value="option3">Option 3</mat-option>
+                </mat-select>
+              </mat-form-field>
+        </div>
+        <div class="fourth-row">
+            <mat-form-field appearance="outline" class="fourth-row-input">
+                <mat-select  [(ngModel)]="selectedOption3" name="option" class="select-class2">
+                  <mat-option value="option1">Homeowners of America</mat-option>
+                  <mat-option value="option2">Option 2</mat-option>
+                  <mat-option value="option3">Option 3</mat-option>
+                </mat-select>
+              </mat-form-field>
+        </div>
+        <div class="fourth-row">
+            <mat-form-field appearance="outline" class="fourth-row-input">
+                <mat-select placeholder="Claim" [(ngModel)]="selectedOption3"  class="select-class2">
+                  <mat-option value="option1">Option 1</mat-option>
+                  <mat-option value="option2">Option 2</mat-option>
+                  <mat-option value="option3">Option 3</mat-option>
+                </mat-select>
+              </mat-form-field>
+        </div>
+        <div class="fourth-row">
+            <div style="display: flex; justify-content: space-between">
+                <mat-form-field appearance="outline" class="row-input">
+                    <mat-select placeholder="Task Type" [(ngModel)]="selectedOption3"  class="select-class2">
+                      <mat-option value="option1">Option 1</mat-option>
+                      <mat-option value="option2">Option 2</mat-option>
+                      <mat-option value="option3">Option 3</mat-option>
+                    </mat-select>
+                  </mat-form-field>
+                  <mat-form-field appearance="outline" class="row-input">
+                    <mat-select placeholder="Sub Type" [(ngModel)]="selectedOption3"  class="select-class2">
+                      <mat-option value="option1">Option 1</mat-option>
+                      <mat-option value="option2">Option 2</mat-option>
+                      <mat-option value="option3">Option 3</mat-option>
+                    </mat-select>
+                  </mat-form-field>
+                  <mat-form-field appearance="outline" class="row-input">
+                    <mat-select placeholder="Group" [(ngModel)]="selectedOption3"  class="select-class2">
+                      <mat-option value="option1">Option 1</mat-option>
+                      <mat-option value="option2">Option 2</mat-option>
+                      <mat-option value="option3">Option 3</mat-option>
+                    </mat-select>
+                </mat-form-field>
+            </div>
+        </div> -->
+     
+       
+
+        <!-- W/o using Angular Material (Starts here)        -->
+
+        <!-- <div class="fourth-row">
+            <select formControlName="selectedValue1" class="input1" >
+                <option value="option1">TXC15447788956623, 3/5/2023, 3/5/2024, Home</option>
+                <option value="option2">Option 2</option>
+                <option value="option3">Option 3</option>
+              </select>
+        </div> -->
+        <div class="fourth-row">
+            <select class="input1" name="txcNumber" formControlName="txcNumber">
+                <option value="TXC15447788956623, 3/5/2023, 3/5/2024, Home" selected>TXC15447788956623, 3/5/2023, 3/5/2024, Home</option>
+                <option value="option2">Option 2</option>
+                <option value="option3">Option 3</option>
+              </select>
+        </div>
+        <div class="fourth-row">
+            <select class="input1" name="effective" formControlName="effective">
+                <option value="Effective 2/5/2023, AutoDownload, RWL, 1/5/2023" selected> Effective 2/5/2023, AutoDownload, RWL, 1/5/2023</option>
+                <option value="option2">Option 2</option>
+                <option value="option3">Option 3</option>
+              </select>
+        </div>
+
+        <div class="fourth-row">
+            <select class="input1" name="homeOwners" formControlName="homeOwners">
+                <option value="Homeowners of America" selected> Homeowners of America</option>
+                <option value="option2">Option 2</option>
+                <option value="option3">Option 3</option>
+              </select>
+        </div>
+        
+        <div class="fourth-row">
+            <select class="input1" name="claim" formControlName="claim" >
+                <option value="Claim" selected> Claim</option>
+                <option value="option2">Option 2</option>
+                <option value="option3">Option 3</option>
+              </select>
+        </div>
+
+        <div class="fourth-row">
+            <div style="display: flex; justify-content: space-between">
+                <select class="input2" name="taskType" formControlName="taskType">
+                    <option value="Task Type" selected>Task Type</option>
+                    <option value="option2">Option 2</option>
+                    <option value="option3">Option 3</option>
+                  </select>
+                  <select class="input2" name="subType" formControlName="subType">
+                    <option value="Sub Type" selected>Sub Type</option>
+                    <option value="option2">Option 2</option>
+                    <option value="option3">Option 3</option>
+                  </select>
+                  <select class="input3" name="group" formControlName="group">
+                    <option value="Group" selected>Group</option>
+                    <option value="option2">Option 2</option>
+                    <option value="option3">Option 3</option>
+                  </select>
+            </div>
+        </div>
+        <div class="fourth-row">
+            <mat-form-field appearance="outline" class="input4">
+                <input matInput [matDatepicker]="picker1" name="date" formControlName="date">
+                <mat-datepicker-toggle matSuffix [for]="picker1"></mat-datepicker-toggle>
+                <mat-datepicker #picker1></mat-datepicker>
+            </mat-form-field>
+        </div>
+        <div class="upload">
+            <input type="file" id="file" style="padding-top:30px;" name="files" formControlName="files" (change)="onFileSelected($event)">
+        </div>
+     <div class="fourth-row">
+        <input type="text" value="Checklist Item" class="input5" name="checkList" formControlName="checkList"/>
+     </div>
+     <div class="fourth-row">
+        <input type="email" placeholder="Owned by"  class="input5" name="ownedBy" formControlName="ownedBy"/>
+     </div>
+   
+     <div class="fourth-row">
+        <mat-form-field appearance="outline" class="input4">
+            <input matInput [matDatepicker]="picker2" placeholder="Select date" [value]="date1">
+            <mat-datepicker-toggle matSuffix [for]="picker2"></mat-datepicker-toggle>
+            <mat-datepicker #picker2></mat-datepicker>
+        </mat-form-field>
+    </div><br>
+    <div class="fourth-row" style="height: 100px; display: flex; justify-content: space-between;">
+        <button mat-raised-button class="cancel" style="background-color:#FF3D00; color: white; font-family: Arial, Helvetica, sans-serif;">Cancel</button>
+        <button mat-raised-button class="save" style="background-color:#0085FF; color: white; font-family: Arial, Helvetica, sans-serif;" >Save</button>
+    </div>
+
+       <!--
+        <div class="fourth-row">
+            <mat-form-field appearance="outline" class="fourth-row-input">
+                <input matInput placeholder="Checklist Item" value="">
+              </mat-form-field>
+        </div>
+        <div class="fourth-row">
+            <mat-form-field appearance="outline" class="fourth-row-input">
+                <input matInput placeholder="Owned By" value="">
+              </mat-form-field>
+        </div>
+        <div class="fourth-row">
+            <mat-form-field appearance="outline" class="fourth-row-input">
+                <input matInput [matDatepicker]="picker" placeholder="Due">
+                <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+                <mat-datepicker #picker></mat-datepicker>
+            </mat-form-field>
+        </div>
+        <div class="fourth-row" style="height: 100px">
+            <mat-form-field appearance="outline" class="fourth-row-input">
+                <button mat-raised-button class="cancel">Cancel</button>
+                <button mat-raised-button class="save" >Save</button>
+            </mat-form-field>
+        </div> -->
+        
+    </form>
+    
+</div>

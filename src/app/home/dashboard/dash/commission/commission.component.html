@@ -1,0 +1,13 @@
+<div class="content1">
+    <h1>{{summary}}</h1>
+    <p style="color: #969696;">{{growthtype}} <span *ngIf="getArrow(symbol) else elseBlock"
+            style="background-color:#E6F8EB; padding: 5px; border-radius: 5px; color: #00BA34">{{growth}} <i
+                class="fas fa-arrow-up" style="color: #00BA34"></i></span>
+        <ng-template #elseBlock>
+            <span style="background-color:#F4D9D9; padding: 5px; border-radius: 5px; color: #D44848">{{growth}} <i
+                    class="fas fa-arrow-down" style="color: #D44848"></i></span>
+        </ng-template>
+    </p>
+    <a mat-stroked-button href="https://www.google.com/" target="_blank" style="color: black;">Your Commision Summary <i
+            class='fas fa-angle-right' style='font-size:18px; color: #969696; padding-left: 10px;'></i></a>
+</div>

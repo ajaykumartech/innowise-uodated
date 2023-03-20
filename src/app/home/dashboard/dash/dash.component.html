@@ -1,0 +1,81 @@
+<div class="matt-card" *ngIf="dashboardData; else other">
+    <mat-card style="width:95%;margin: 0px 20px;height:auto;border-radius: 15px;padding: 5px 20px;">
+        <div class="sea-pro">
+
+            <div class="searc">
+                <app-search (inputt)="searchValue($event)"></app-search>
+            </div>
+            <div class="prof">
+                <app-profile></app-profile>
+            </div>
+        </div>
+
+        <mat-card-header>
+            <div class="opening" style="justify-content: space-between;width:98%;">
+                <div class="textt">
+                    <mat-card-title style="font-size: 35px">Dashboard</mat-card-title>
+                    <mat-card-title style="color: #969696; font-size: 15px;font-weight: normal;">Good to see you again,
+                        {{dashboardData.firstName}}</mat-card-title>
+                </div>
+                <div class="downbut">
+                    <button mat-raised-button
+                        style="margin-right: 10px;background-color: #0085FF;color: white;">Download Report</button>
+                    <button mat-button>Customize <i class='fas fa-gear'
+                            style='font-size:18px; color: #969696; padding-left: 10px;'></i></button>
+                </div>
+            </div>
+        </mat-card-header>
+
+        <div class="commission">
+            <!--                       Graph                -->
+            <div class="graphs" style="width:60%; margin-right: 3vh;"
+                *ngIf="dashboardData.dashboardSchema[0].Type == 'LineWithMarkers';else error1">
+                <app-graph [data]="this.dashboardData.dashboardSchema[0]"></app-graph>
+            </div>
+            <ng-template #error1>
+                <p class="error_find">Couldn't find {{dashboardData.dashboardSchema[0].Type}}</p>
+            </ng-template>
+            <div class="compol">
+                <!--                       Commission                -->
+                <div class="coms"
+                    *ngIf="dashboardData.dashboardSchema[1].Type == 'SummaryWithArrow';else error2">
+                    <app-commission [data]="this.dashboardData.dashboardSchema[1]"></app-commission>
+                </div>
+                <ng-template #error2>
+                    <p class="error_find">Couldn't find {{dashboardData.dashboardSchema[1].Type}}</p>
+                </ng-template><br>
+                <br><br>
+                <!--                       Policies                -->
+                <div class="poli"
+                    *ngIf="dashboardData.dashboardSchema[2].Type == 'SummaryWithArrowAndCategory';else error3">
+                    <app-policies [data]="this.dashboardData.dashboardSchema[2]"></app-policies>
+                </div>
+                <ng-template #error3>
+                    <p class="error_find">Couldn't find {{dashboardData.dashboardSchema[2].Type}}</p>
+                </ng-template>
+            </div>
+        </div>
+    </mat-card>
+
+    <div class="row" *ngIf="dashboardData">
+        <!--                       Workflows                -->
+        <div class="col" *ngIf="dashboardData.dashboardSchema[3].Type == 'Workflow';else error4">
+            <app-workflows [data]="this.dashboardData.dashboardSchema[3]"></app-workflows>
+        </div>
+        <ng-template #error4>
+            <p class="error_find">Couldn't find {{dashboardData.dashboardSchema[3].Type}}</p>
+        </ng-template>
+
+        <!--                       Tasks                -->
+        <div class="col" *ngIf="dashboardData.dashboardSchema[4].Type == 'Tasks';else error5">
+            <app-tasks [data]="this.dashboardData.dashboardSchema[4]"></app-tasks>
+        </div>
+        <ng-template #error5>
+            <p class="error_find">Couldn't find {{dashboardData.dashboardSchema[4].Type}}</p>
+        </ng-template>
+    </div>
+</div>
+
+<ng-template #other>
+    <div routerLink="./error"></div>
+</ng-template>

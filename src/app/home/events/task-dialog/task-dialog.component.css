@@ -1,0 +1,87 @@
+.dialog{
+    height:750px;
+    width:450px;
+    background-color: #E4E4E4;
+}
+.first-row{
+    display: flex;
+    padding-top:20px;
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+input{
+    width: 210px;
+    height: 30px;
+   
+}
+.second-row, .third-row, .fourth-row{
+    padding-left: 20px;
+    padding-right: 20px;
+   
+}
+.second-row-input, .third-row-input, .fourth-row-input{
+    width: 410px;
+}
+.select-class, .select-class1, .select-class2{
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+}
+.row-input{
+    width: 120px
+}
+
+
+.input1{
+    width: 410px;
+    height: 35px;
+    border: none;
+    margin-bottom: 10px;
+}
+.input2{
+    width: 410px;
+    height: 35px;
+    border: none;
+    margin-right:10px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+.input3{
+    width: 410px;
+    height: 35px;
+    border: none;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+.input4{
+    width: 210px;
+    height: 35px;
+    border: none;
+    margin-bottom: 10px;
+}
+.input5{
+    width: 405px;
+    height: 35px;
+    border: none;
+    margin-bottom: 10px;
+}
+.fourth-row-input1{
+    width: 410px;
+    height: 35px;
+}
+.fourth-row-input2{
+    margin-top: 5px;
+    width: 402px;
+    height: 30px;
+}
+.upload{
+    width: 370px;
+    height: 75px; 
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: white;
+    margin-left: 20px;
+    margin-bottom: 10px;
+    margin-bottom: 10px;
+}

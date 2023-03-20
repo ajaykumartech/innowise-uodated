@@ -1,0 +1,274 @@
+{
+    "tableData": [
+        {
+            "FilterDuration": "03/07/2018 - 03/07/2023",
+            "FilterByPolicySelected": [
+                "Home",
+                "Auto"
+            ],
+            "FilterByPolicy": [
+                "Home",
+                "Auto",
+                "DwellingFire",
+                "Flood",
+                "Life"
+            ],
+            "pagesInResult": 4,
+            "itemPerPage": 10,
+            "currentPage": 0,
+            "data": [
+                {
+                    "Policy": {
+                        "PolciIcon": "BASE64ICON",
+                        "PolicType": "Home",
+                        "PolicyNumber": "POL001"
+                    },
+                    "Inurer": {
+                        "InsurerIcon": "BASE64ICON",
+                        "InsurerName": "Homeowners of America"
+                    },
+                    "Description": "Dwelling Policy for primary home",
+                    "Cost": {
+                        "Cost": "$120.00",
+                        "Billed": "$0.00",
+                        "Color": "Red"
+                    },
+                    "Term": {
+                        "TermStart": "12/24/2022",
+                        "TermEnd": "12/24/2023"
+                    },
+                    "Status": {
+                        "StatusPolicy": "Active",
+                        "Color": "Green"
+                    }
+                },
+                {
+                    "Policy": {
+                        "PolciIcon": "BASE64ICON",
+                        "PolicType": "Home",
+                        "PolicyNumber": "POL002"
+                    },
+                    "Inurer": {
+                        "InsurerIcon": "BASE64ICON",
+                        "InsurerName": "Homeowners of America"
+                    },
+                    "Description": "Dwelling Policy for primary home",
+                    "Cost": {
+                        "Cost": "$120.00",
+                        "Billed": "$0.00",
+                        "Color": "Red"
+                    },
+                    "Term": {
+                        "TermStart": "12/24/2022",
+                        "TermEnd": "12/24/2023"
+                    },
+                    "Status": {
+                        "StatusPolicy": "Cancelled",
+                        "Color": "Red"
+                    }
+                },
+                {
+                    "Policy": {
+                        "PolciIcon": "BASE64ICON",
+                        "PolicType": "Auto",
+                        "PolicyNumber": "POL003"
+                    },
+                    "Inurer": {
+                        "InsurerIcon": "BASE64ICON",
+                        "InsurerName": "Allstate Insurance"
+                    },
+                    "Description": "Auto Policy renewed yearly",
+                    "Cost": {
+                        "Cost": "$120.00",
+                        "Billed": "$0.00",
+                        "Color": "Red"
+                    },
+                    "Term": {
+                        "TermStart": "12/24/2022",
+                        "TermEnd": "12/24/2023"
+                    },
+                    "Status": {
+                        "StatusPolicy": "Active",
+                        "Color": "Green"
+                    }
+                },
+                {
+                    "Policy": {
+                        "PolciIcon": "BASE64ICON",
+                        "PolicType": "Auto",
+                        "PolicyNumber": "POL004"
+                    },
+                    "Inurer": {
+                        "InsurerIcon": "BASE64ICON",
+                        "InsurerName": "Allstate Insurance"
+                    },
+                    "Description": "Auto Policy renewed yearly",
+                    "Cost": {
+                        "Cost": "$120.00",
+                        "Billed": "$0.00",
+                        "Color": "Red"
+                    },
+                    "Term": {
+                        "TermStart": "12/24/2022",
+                        "TermEnd": "12/24/2023"
+                    },
+                    "Status": {
+                        "StatusPolicy": "Active",
+                        "Color": "Green"
+                    }
+                },
+                {
+                    "Policy": {
+                        "PolciIcon": "BASE64ICON",
+                        "PolicType": "Auto",
+                        "PolicyNumber": "POL005"
+                    },
+                    "Inurer": {
+                        "InsurerIcon": "BASE64ICON",
+                        "InsurerName": "Allstate Insurance"
+                    },
+                    "Description": "Auto Policy renewed yearly",
+                    "Cost": {
+                        "Cost": "$120.00",
+                        "Billed": "$0.00",
+                        "Color": "Red"
+                    },
+                    "Term": {
+                        "TermStart": "12/24/2022",
+                        "TermEnd": "12/24/2023"
+                    },
+                    "Status": {
+                        "StatusPolicy": "Active",
+                        "Color": "Green"
+                    }
+                },
+                {
+                    "Policy": {
+                        "PolciIcon": "BASE64ICON",
+                        "PolicType": "Auto",
+                        "PolicyNumber": "POL006"
+                    },
+                    "Inurer": {
+                        "InsurerIcon": "BASE64ICON",
+                        "InsurerName": "Allstate Insurance"
+                    },
+                    "Description": "Auto Policy renewed yearly",
+                    "Cost": {
+                        "Cost": "$120.00",
+                        "Billed": "$0.00",
+                        "Color": "Red"
+                    },
+                    "Term": {
+                        "TermStart": "12/24/2022",
+                        "TermEnd": "12/24/2023"
+                    },
+                    "Status": {
+                        "StatusPolicy": "Active",
+                        "Color": "Green"
+                    }
+                },
+                {
+                    "Policy": {
+                        "PolciIcon": "BASE64ICON",
+                        "PolicType": "Auto",
+                        "PolicyNumber": "POL007"
+                    },
+                    "Inurer": {
+                        "InsurerIcon": "BASE64ICON",
+                        "InsurerName": "Allstate Insurance"
+                    },
+                    "Description": "Auto Policy renewed yearly",
+                    "Cost": {
+                        "Cost": "$120.00",
+                        "Billed": "$0.00",
+                        "Color": "Red"
+                    },
+                    "Term": {
+                        "TermStart": "12/24/2022",
+                        "TermEnd": "12/24/2023"
+                    },
+                    "Status": {
+                        "StatusPolicy": "Active",
+                        "Color": "Green"
+                    }
+                },
+                {
+                    "Policy": {
+                        "PolciIcon": "BASE64ICON",
+                        "PolicType": "Auto",
+                        "PolicyNumber": "POL008"
+                    },
+                    "Inurer": {
+                        "InsurerIcon": "BASE64ICON",
+                        "InsurerName": "Allstate Insurance"
+                    },
+                    "Description": "Auto Policy renewed yearly",
+                    "Cost": {
+                        "Cost": "$120.00",
+                        "Billed": "$0.00",
+                        "Color": "Red"
+                    },
+                    "Term": {
+                        "TermStart": "12/24/2022",
+                        "TermEnd": "12/24/2023"
+                    },
+                    "Status": {
+                        "StatusPolicy": "Active",
+                        "Color": "Green"
+                    }
+                },
+                {
+                    "Policy": {
+                        "PolciIcon": "BASE64ICON",
+                        "PolicType": "Auto",
+                        "PolicyNumber": "POL009"
+                    },
+                    "Inurer": {
+                        "InsurerIcon": "BASE64ICON",
+                        "InsurerName": "Allstate Insurance"
+                    },
+                    "Description": "Auto Policy renewed yearly",
+                    "Cost": {
+                        "Cost": "$120.00",
+                        "Billed": "$0.00",
+                        "Color": "Red"
+                    },
+                    "Term": {
+                        "TermStart": "12/24/2022",
+                        "TermEnd": "12/24/2023"
+                    },
+                    "Status": {
+                        "StatusPolicy": "Active",
+                        "Color": "Green"
+                    }
+                },
+                {
+                    "Policy": {
+                        "PolciIcon": "BASE64ICON",
+                        "PolicType": "Auto",
+                        "PolicyNumber": "POL010"
+                    },
+                    "Inurer": {
+                        "InsurerIcon": "BASE64ICON",
+                        "InsurerName": "Allstate Insurance"
+                    },
+                    "Description": "Auto Policy renewed yearly",
+                    "Cost": {
+                        "Cost": "$120.00",
+                        "Billed": "$0.00",
+                        "Color": "Red"
+                    },
+                    "Term": {
+                        "TermStart": "12/24/2022",
+                        "TermEnd": "12/24/2023"
+                    },
+                    "Status": {
+                        "StatusPolicy": "Active",
+                        "Color": "Green"
+                    }
+                }
+               
+            ]
+        }
+    ]
+}

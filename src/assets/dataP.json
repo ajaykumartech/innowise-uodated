@@ -1,0 +1,584 @@
+{
+    "user": "Sabyasachi Basu",
+    "userName": "saby",
+    "userType": "Agent",
+    "userRoles": "Role1,Role2,Role3",
+    "dashboardType": "Custom",
+    "dashboardSchema": {
+        "placeholder1": {
+            "Type": "LineWithMarkers",
+            "Title": "Sales Summary",
+            "Filter1": [
+                "Self",
+                "Team",
+                "Organization"
+            ],
+            "Filter1Selected": "Self",
+            "Filter2": [
+                "Home",
+                "Auto",
+                "Flood",
+                "GL",
+                "Business Auto",
+                "Worker's Comp",
+                "Umbrella"
+            ],
+            "Filter2Selected": [
+                "Home",
+                "Auto",
+                "Flood"
+            ],
+            "Filter3": [
+                "Daily",
+                "Weekly",
+                "Monthly",
+                "Querterly"
+            ],
+            "Filter3Selected": "Monthly",
+            "X-Axis1": [
+                "Aug",
+                "Sep",
+                "Oct",
+                "Nov",
+                "Dec",
+                "Jan",
+                "Feb",
+                "Mar",
+                "Apr",
+                "May",
+                "Jun",
+                "Jul"
+            ],
+            "X-Axis2": [
+                "2021",
+                "2022"
+            ],
+            "Y-Axis1": [
+                "$ 0",
+                "$ 50",
+                "$ 100",
+                "$ 150",
+                "$ 200",
+                "$ 250",
+                "$ 300"
+            ]
+        },
+        "placeholder2": {
+            "Type": "SummaryWithGrowth",
+            "Reroute": "Commission Summary",
+            "Redirect URL": "/commission-summary"
+        },
+        "placeholder3": {
+            "Type": "SummaryWithDeclineAndCategory",
+            "Reroute": "Policy Sales Summary",
+            "Redirect URL": "/policy-sales-summary",
+            "InfoCategory": [
+                "Billed",
+                "Due"
+            ]
+        },
+        "placeholder4": {
+            "Type": "Workflow",
+            "Reroute": "See Active Workflows",
+            "Title": "Workflows",
+            "Redirect URL": "/workflows",
+            "InfoCategory": [
+                "New Business Workflows",
+                "Renewal Workflows"
+            ],
+            "Specific-Redirect": [
+                "/workflows?workflow=new-business",
+                "/workflows?workflow=renewals"
+            ]
+        },
+        "placeholder5": {
+            "Type": "Tasks",
+            "Reroute": "See All",
+            "Title": "Tasks",
+            "Redirect URL": "/all-tasks"
+        }
+    },
+    "dashboardData": {
+        "self": {
+            "placeholder1": {
+                "Home": {
+                    "2021": {
+                        "Aug": "$ 100",
+                        "Sep": "$ 200",
+                        "Oct": "$ 200",
+                        "Nov": "$ 200",
+                        "Dec": "$ 200"
+                    },
+                    "2022": {
+                        "Jan": "$ 200",
+                        "Feb": "$ 200",
+                        "Mar": "$ 200",
+                        "Apr": "$ 200",
+                        "May": "$ 200",
+                        "Jun": "$ 200",
+                        "Jul": "$ 200"
+                    }
+                },
+                "Auto": {
+                    "2021": {
+                        "Aug": "$ 100",
+                        "Sep": "$ 200",
+                        "Oct": "$ 200",
+                        "Nov": "$ 200",
+                        "Dec": "$ 200"
+                    },
+                    "2022": {
+                        "Jan": "$ 200",
+                        "Feb": "$ 200",
+                        "Mar": "$ 200",
+                        "Apr": "$ 200",
+                        "May": "$ 200",
+                        "Jun": "$ 200",
+                        "Jul": "$ 200"
+                    }
+                },
+                "Flood": {
+                    "2021": {
+                        "Aug": "$ 100",
+                        "Sep": "$ 200",
+                        "Oct": "$ 200",
+                        "Nov": "$ 200",
+                        "Dec": "$ 200"
+                    },
+                    "2022": {
+                        "Jan": "$ 200",
+                        "Feb": "$ 200",
+                        "Mar": "$ 200",
+                        "Apr": "$ 200",
+                        "May": "$ 200",
+                        "Jun": "$ 200",
+                        "Jul": "$ 200"
+                    }
+                }
+            },
+            "placeholder2": {
+                "Summary": "$ 328",
+                "GrowthType": "Commission this month",
+                "Growth": "56%"
+
+            },
+            "placeholder3": {
+                "Summary": "36",
+                "DeclineType": "Policies sold this month",
+                "Decline": "12%",
+                "InfoCategoryData": [
+                    "8",
+                    "24"
+                ]
+            },
+            "placeholder4": {
+                "New Business Workflows": {
+                    "Summary": "26",
+                    "workflowItems": [
+                        {
+                            "ItemInfo": "Onboarding",
+                            "Count": "434",
+                            "Redirect URL": "/workflows?workflow=new-business&type=onboarding"
+                        },
+                        {
+                            "ItemInfo": "Customer Review",
+                            "Count": "13",
+                            "Redirect URL": "/workflows?workflow=new-business&type=customerReview"
+                        },
+                        {
+                            "ItemInfo": "Vendor Renewal",
+                            "Count": "56",
+                            "Redirect URL": "/workflows?workflow=new-business&type=vendorRenewal"
+                        },
+                        {
+                            "ItemInfo": "Binder Due",
+                            "Count": "11",
+                            "Redirect URL": "/workflows?workflow=new-business&type=binderDue"
+                        }
+                    ]
+                },
+                "Renewal Workflows": {
+                    "Summary": "8",
+                    "Items": [
+                        {
+                            "ItemInfo": "Vendor Renewal",
+                            "Count": "24",
+                            "Redirect URL": "/workflows?workflow=renewals&type=vendorRenewal"
+                        },
+                        {
+                            "ItemInfo": "Binder Due",
+                            "Count": "759",
+                            "Redirect URL": "/workflows?workflow=renewals&type=binderDue"
+                        }
+                    ]
+                }
+            },
+            "placeholder5": {
+                "taskItems": [
+                    {
+                        "Title": "Onboarding Salsabila Hampton",
+                        "CompletionStatus": "75%",
+                        "Checklist": [
+                            {
+                                "ChecklistTitle": "Share Quote for Home and Auto",
+                                "ChecklistStatus": "Not Completed"
+                            },
+                            {
+                                "ChecklistTitle": "Push Auto profile for Rating",
+                                "ChecklistStatus": "Not Completed"
+                            }
+                        ]
+                    },
+                    {
+                        "Title": "Vendor Renewal",
+                        "CompletionStatus": "50%",
+                        "Checklist": [
+                            {
+                                "ChecklistTitle": "Quote for Life and Home",
+                                "ChecklistStatus": "Completed"
+                            },
+                            {
+                                "ChecklistTitle": "Submit additional question response for Homeowners",
+                                "ChecklistStatus": "Not Completed"
+                            },
+                            {
+                                "ChecklistTitle": "Something else",
+                                "ChecklistStatus": "Not Completed"
+                            },
+                            {
+                                "ChecklistTitle": "Something else",
+                                "ChecklistStatus": "Not Completed"
+                            },
+                            {
+                                "ChecklistTitle": "Something else",
+                                "ChecklistStatus": "Not Completed"
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        "team": [
+            {
+                "teamMemberName": "Rahul Mitra",
+                "teamMemberUserID": "rahul",
+                "placeholder1": {
+                    "Home": {
+                        "2021": {
+                            "Aug": "$ 100",
+                            "Sep": "$ 200",
+                            "Oct": "$ 200",
+                            "Nov": "$ 200",
+                            "Dec": "$ 200"
+                        },
+                        "2022": {
+                            "Jan": "$ 200",
+                            "Feb": "$ 200",
+                            "Mar": "$ 200",
+                            "Apr": "$ 200",
+                            "May": "$ 200",
+                            "Jun": "$ 200",
+                            "Jul": "$ 200"
+                        }
+                    },
+                    "Auto": {
+                        "2021": {
+                            "Aug": "$ 100",
+                            "Sep": "$ 200",
+                            "Oct": "$ 200",
+                            "Nov": "$ 200",
+                            "Dec": "$ 200"
+                        },
+                        "2022": {
+                            "Jan": "$ 200",
+                            "Feb": "$ 200",
+                            "Mar": "$ 200",
+                            "Apr": "$ 200",
+                            "May": "$ 200",
+                            "Jun": "$ 200",
+                            "Jul": "$ 200"
+                        }
+                    },
+                    "Flood": {
+                        "2021": {
+                            "Aug": "$ 100",
+                            "Sep": "$ 200",
+                            "Oct": "$ 200",
+                            "Nov": "$ 200",
+                            "Dec": "$ 200"
+                        },
+                        "2022": {
+                            "Jan": "$ 200",
+                            "Feb": "$ 200",
+                            "Mar": "$ 200",
+                            "Apr": "$ 200",
+                            "May": "$ 200",
+                            "Jun": "$ 200",
+                            "Jul": "$ 200"
+                        }
+                    }
+                },
+                "placeholder2": {
+                    "Summary": "$ 328",
+                    "GrowthType": "Commission this month",
+                    "Growth": "56%"
+                },
+                "placeholder3": {
+                    "Summary": "36",
+                    "DeclineType": "Policies sold this month",
+                    "Decline": "12%",
+                    "InfoCategoryData": [
+                        "8",
+                        "24"
+                    ]
+                },
+                "placeholder4": {
+                    "New Business Workflows": {
+                        "Summary": "26",
+                        "workflowItems": [
+                            {
+                                "ItemInfo": "Onboarding",
+                                "Count": "434",
+                                "Redirect URL": "/workflows?workflow=new-business&type=onboarding"
+                            },
+                            {
+                                "ItemInfo": "Customer Review",
+                                "Count": "13",
+                                "Redirect URL": "/workflows?workflow=new-business&type=customerReview"
+                            },
+                            {
+                                "ItemInfo": "Vendor Renewal",
+                                "Count": "56",
+                                "Redirect URL": "/workflows?workflow=new-business&type=vendorRenewal"
+                            },
+                            {
+                                "ItemInfo": "Binder Due",
+                                "Count": "11",
+                                "Redirect URL": "/workflows?workflow=new-business&type=binderDue"
+                            }
+                        ]
+                    },
+                    "Renewal Workflows": {
+                        "Summary": "8",
+                        "Items": [
+                            {
+                                "ItemInfo": "Vendor Renewal",
+                                "Count": "24",
+                                "Redirect URL": "/workflows?workflow=renewals&type=vendorRenewal"
+                            },
+                            {
+                                "ItemInfo": "Binder Due",
+                                "Count": "759",
+                                "Redirect URL": "/workflows?workflow=renewals&type=binderDue"
+                            }
+                        ]
+                    }
+                },
+                "placeholder5": {
+                    "taskItems": [
+                        {
+                            "Title": "Onboarding Salsabila Hampton",
+                            "CompletionStatus": "75%",
+                            "Checklist": [
+                                {
+                                    "ChecklistTitle": "Share Quote for Home and Auto",
+                                    "ChecklistStatus": "Not Completed"
+                                },
+                                {
+                                    "ChecklistTitle": "Push Auto profile for Rating",
+                                    "ChecklistStatus": "Not Completed"
+                                }
+                            ]
+                        },
+                        {
+                            "Title": "Vendor Renewal",
+                            "CompletionStatus": "50%",
+                            "Checklist": [
+                                {
+                                    "ChecklistTitle": "Quote for Life and Home",
+                                    "ChecklistStatus": "Completed"
+                                },
+                                {
+                                    "ChecklistTitle": "Submit additional question response for Homeowners",
+                                    "ChecklistStatus": "Not Completed"
+                                },
+                                {
+                                    "ChecklistTitle": "Something else",
+                                    "ChecklistStatus": "Not Completed"
+                                },
+                                {
+                                    "ChecklistTitle": "Something else",
+                                    "ChecklistStatus": "Not Completed"
+                                },
+                                {
+                                    "ChecklistTitle": "Something else",
+                                    "ChecklistStatus": "Not Completed"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            },
+            {
+                "teamMemberName": "Muru Shirahatti",
+                "teamMemberUserID": "muru",
+                "placeholder1": {
+                    "Home": {
+                        "2021": {
+                            "Aug": "$ 100",
+                            "Sep": "$ 200",
+                            "Oct": "$ 200",
+                            "Nov": "$ 200",
+                            "Dec": "$ 200"
+                        },
+                        "2022": {
+                            "Jan": "$ 200",
+                            "Feb": "$ 200",
+                            "Mar": "$ 200",
+                            "Apr": "$ 200",
+                            "May": "$ 200",
+                            "Jun": "$ 200",
+                            "Jul": "$ 200"
+                        }
+                    },
+                    "Auto": {
+                        "2021": {
+                            "Aug": "$ 100",
+                            "Sep": "$ 200",
+                            "Oct": "$ 200",
+                            "Nov": "$ 200",
+                            "Dec": "$ 200"
+                        },
+                        "2022": {
+                            "Jan": "$ 200",
+                            "Feb": "$ 200",
+                            "Mar": "$ 200",
+                            "Apr": "$ 200",
+                            "May": "$ 200",
+                            "Jun": "$ 200",
+                            "Jul": "$ 200"
+                        }
+                    },
+                    "Flood": {
+                        "2021": {
+                            "Aug": "$ 100",
+                            "Sep": "$ 200",
+                            "Oct": "$ 200",
+                            "Nov": "$ 200",
+                            "Dec": "$ 200"
+                        },
+                        "2022": {
+                            "Jan": "$ 200",
+                            "Feb": "$ 200",
+                            "Mar": "$ 200",
+                            "Apr": "$ 200",
+                            "May": "$ 200",
+                            "Jun": "$ 200",
+                            "Jul": "$ 200"
+                        }
+                    }
+                },
+                "placeholder2": {
+                    "Summary": "$ 328",
+                    "GrowthType": "Commission this month",
+                    "Growth": "56%"
+                },
+                "placeholder3": {
+                    "Summary": "36",
+                    "DeclineType": "Policies sold this month",
+                    "Decline": "12%",
+                    "InfoCategoryData": [
+                        "8",
+                        "24"
+                    ]
+                },
+                "placeholder4": {
+                    "New Business Workflows": {
+                        "Summary": "26",
+                        "workflowItems": [
+                            {
+                                "ItemInfo": "Onboarding",
+                                "Count": "434",
+                                "Redirect URL": "/workflows?workflow=new-business&type=onboarding"
+                            },
+                            {
+                                "ItemInfo": "Customer Review",
+                                "Count": "13",
+                                "Redirect URL": "/workflows?workflow=new-business&type=customerReview"
+                            },
+                            {
+                                "ItemInfo": "Vendor Renewal",
+                                "Count": "56",
+                                "Redirect URL": "/workflows?workflow=new-business&type=vendorRenewal"
+                            },
+                            {
+                                "ItemInfo": "Binder Due",
+                                "Count": "11",
+                                "Redirect URL": "/workflows?workflow=new-business&type=binderDue"
+                            }
+                        ]
+                    },
+                    "Renewal Workflows": {
+                        "Summary": "8",
+                        "Items": [
+                            {
+                                "ItemInfo": "Vendor Renewal",
+                                "Count": "24",
+                                "Redirect URL": "/workflows?workflow=renewals&type=vendorRenewal"
+                            },
+                            {
+                                "ItemInfo": "Binder Due",
+                                "Count": "759",
+                                "Redirect URL": "/workflows?workflow=renewals&type=binderDue"
+                            }
+                        ]
+                    }
+                },
+                "placeholder5": {
+                    "taskItems": [
+                        {
+                            "Title": "Onboarding Salsabila Hampton",
+                            "CompletionStatus": "75%",
+                            "Checklist": [
+                                {
+                                    "ChecklistTitle": "Share Quote for Home and Auto",
+                                    "ChecklistStatus": "Not Completed"
+                                },
+                                {
+                                    "ChecklistTitle": "Push Auto profile for Rating",
+                                    "ChecklistStatus": "Not Completed"
+                                }
+                            ]
+                        },
+                        {
+                            "Title": "Vendor Renewal",
+                            "CompletionStatus": "50%",
+                            "Checklist": [
+                                {
+                                    "ChecklistTitle": "Quote for Life and Home",
+                                    "ChecklistStatus": "Completed"
+                                },
+                                {
+                                    "ChecklistTitle": "Submit additional question response for Homeowners",
+                                    "ChecklistStatus": "Not Completed"
+                                },
+                                {
+                                    "ChecklistTitle": "Something else",
+                                    "ChecklistStatus": "Not Completed"
+                                },
+                                {
+                                    "ChecklistTitle": "Something else",
+                                    "ChecklistStatus": "Not Completed"
+                                },
+                                {
+                                    "ChecklistTitle": "Something else",
+                                    "ChecklistStatus": "Not Completed"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            }
+        ]
+    }
+}

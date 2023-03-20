@@ -1,0 +1,40 @@
+<div style="margin:0px 20px 10px 0px;float: right;" *ngIf="dashboardData">
+    <i [matMenuTriggerFor]="notificationMenu" [matBadge]="notificationCount" class="fas fa-bell" matBadgeSize="small"
+        matBadgeColor="warn"
+        style="vertical-align: middle;font-size:20px;color:gray;background-color: rgb(255, 255, 255);cursor:pointer"></i>
+
+    <mat-menu #notificationMenu="matMenu">
+        <mat-card-title class="profile">
+            <mat-icon panelClass="custom-menu" class="notification-icon">message</mat-icon><span
+                style="font-size: 16px;">Notifications</span>
+        </mat-card-title>
+        <div *ngFor="let item of notificationItems">
+            <div class="notification-content" [ngClass]="{'sidee':item.state == '0'}">
+                <div style="display: flex;" (click)="viewdata(item,item.id)">
+                    <p class="notText">{{item.message}}</p>
+                    <mat-icon *ngIf="item.state==0" class="notIcon">fiber_manual_record</mat-icon>
+                </div>
+            </div>
+        </div>
+    </mat-menu>
+
+    <span *ngIf="profileImage != null; else other"><img [src]="profileImage" width="25"
+            style="border-radius: 28px;vertical-align: middle;margin:0px 15px;color:gray;background-color: rgb(255, 255, 255);" /></span>
+    <ng-template #other>
+        <span>
+            <mat-icon style="vertical-align: middle;margin:0px 10px;color:gray;background-color: rgb(255, 255, 255);">
+                account_circle</mat-icon>
+        </span>
+    </ng-template>
+    <span style="margin:0px 5px">
+        <button mat-button [matMenuTriggerFor]="menu">
+            <span style="margin-right:5px">{{dashboardData.firstName}}</span> <i class="fa fa-caret-down"
+                aria-hidden="true"></i>
+        </button>
+        <mat-menu #menu="matMenu">
+            <button mat-menu-item>{{dashboardData.firstName}}</button>
+            <button mat-menu-item color="warn" (click)="signout()">Logout</button>
+            <button mat-menu-item>Changepassword</button>
+        </mat-menu>
+    </span>
+</div>

@@ -1,0 +1,38 @@
+.main1 {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 20px 0px 30px;
+}
+
+.main2 {
+    display: flex;
+    margin: -10px 20px 0px 50px;
+}
+
+.mat-mdc-form-field-flex {
+    height: 4vh;
+}
+
+.mat-mdc-text-field-wrapper.mdc-text-field--outlined .mat-mdc-form-field-infix {
+    padding-top: 7px;
+}
+
+.mat-mdc-text-field-wrapper {
+    background-color: white;
+}
+
+.home {
+    margin-top: 1vh;
+    margin-right: 2vh;
+    font-size: 15px;
+}
+
+.add {
+    margin-top: 1vh;
+    font-size: 15px;
+    margin-left: 5px;
+}
+
+.selec {
+    margin-right: 2vh;
+}

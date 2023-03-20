@@ -1,0 +1,32 @@
+.mat-mdc-tab-group.mat-tabs-with-background>.mat-mdc-tab-header{
+    background-color: #DDDDDD!important;
+    border: none!important;
+  
+}  
+.mat-mdc-tab-group.mat-tabs-with-background>.mat-mdc-tab-header .mat-mdc-tab .mdc-tab__text-label{
+    color: #969696!important;
+    font-family:Arial, Helvetica, sans-serif ;
+    font-size: large;
+}
+.mat-mdc-tab .mdc-tab__text-label{
+    font-family: Arial, Helvetica, sans-serif; 
+    font-size: large;
+    color: #969696;
+  
+}
+.mat-mdc-tab-group.mat-tabs-with-background>.mat-mdc-tab-header .mdc-tab-indicator__content--underline{
+    border-color: #0085FF!important;
+    /* color: #0085FF!important; */
+}
+.mat-mdc-tab-group.mat-tabs-with-background>.mat-mdc-tab-header .mat-mdc-tab .mdc-tab__text-label{
+    color: #0085FF!important;
+}
+.mat-mdc-tab:not(.mat-mdc-tab-disabled) .mdc-tab-indicator__content--underline{
+    border-color: #0085FF!important;
+}
+.mat-mdc-tab:not(.mat-mdc-tab-disabled).mdc-tab--active .mdc-tab__text-label{
+    color: #0085FF!important;
+}
+.second-row{
+margin-top: 30px;
+}

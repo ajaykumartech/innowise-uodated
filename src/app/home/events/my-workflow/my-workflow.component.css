@@ -1,0 +1,44 @@
+.event-works {
+    height: 80vh;
+    margin: 0px 20px;
+    padding: 0px;
+}
+
+.selec {
+    margin-right: 15px;
+}
+
+.tab-head {
+    display: flex;
+    justify-content: space-between;
+    margin: 15px 20px 5px 20px;
+    width: auto;
+    margin-bottom: 15px solid gray;
+}
+
+.buttons1 {
+    display: flex;
+
+}
+
+@media only screen and (min-width: 320px)and (max-width:480px) {
+    .tab-head {
+        display: flex;
+
+        margin: 15px 20px 0px 20px;
+        width: auto;
+        margin-bottom: 15px solid gray;
+    }
+
+    .buttons1 {
+        display: flow-root;
+
+    }
+
+    .event-works {
+        height: 80vh;
+        margin: 0px 20px;
+        padding: 0px;
+    }
+
+}

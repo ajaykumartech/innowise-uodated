@@ -1,0 +1,78 @@
+<!--                Search                 -->
+
+<app-search (inputt)="searchValue($event)"></app-search>
+
+<!--               Filter start                  -->
+
+<div class="filter-class" *ngIf="schema">
+    <div style="font-size: 12px;" *ngFor="let filter of schema.AvailableFiltersSelected ; let i=index">
+    
+        <mat-form-field appearance="outline" [ngClass]="{'maxwidth':schema[filter+'Selected'][0].length>15}"
+            style="width:130px; margin-right: 10px;">
+            <mat-select placeholder="Self" (selectionChange)="getValues($event.value,filter)"
+                [(ngModel)]="schema[filter+'Selected'][0]" style="padding-top: 5px;"
+                *ngIf="filter!=='Filter4'; else other">
+                <mat-option *ngFor="let fill of schema[filter]" [value]="fill">
+                    {{fill}}
+                </mat-option>
+            </mat-select>
+            <ng-template #other>
+                <mat-select name="filter" style="padding-top: 0.5vh;" multiple
+                    (selectionChange)="shareCheckedList2($event.value,filter)" [(ngModel)]="schema[filter+'Selected']">
+                    <mat-option *ngFor="let topping of schema[filter]" [value]="topping">{{topping}}
+                    </mat-option>
+                </mat-select>
+            </ng-template>
+        </mat-form-field>
+ 
+    </div>
+    <mat-form-field appearance="outline" style="width: 150px;">
+        <mat-icon matTextPrefix style="vertical-align: middle;padding-right: 5px; color: rgb(160, 159, 159);" >filter_list</mat-icon>
+        <mat-select name="filter" style="padding-top: 0.5vh;" multiple
+            (selectionChange)="shareCheckedList1($event.value)" [(ngModel)]="schema.TableSchema.HeadersSelected">
+            <mat-option *ngFor="let topping of schema.TableSchema.HeadersAvailable" [value]="topping">{{topping}}
+            </mat-option>
+        </mat-select>
+    </mat-form-field>
+</div>
+
+<!--               Filter end                   -->
+
+
+<!-- Table start  -->
+
+<div class="mat-elevation-z8">
+    <div class="res-table" style="height: 49vh;">
+        <table mat-table [dataSource]="dataSource">
+            <ng-container [matColumnDef]="column" *ngFor="let column of displayedColumns">
+                <th mat-header-cell class="custom-mat-header-styling tableHeaderCellDiv" *matHeaderCellDef>
+                    <span>{{column }} </span>
+                </th>
+                <div *ngIf="column!='Name';else other">
+                    <td mat-cel *matCellDef="let element"> {{element[column]}} </td>
+                </div>
+                <ng-template #other>
+                    <td [ngClass]="{'roww':column=='Name'}"
+                        [routerLink]="['customer-search-details',element.ClientUserID]" mat-cel
+                        *matCellDef="let element">
+                        {{element[column]}} </td>
+                </ng-template>
+            </ng-container>
+            <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+            <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+        </table>
+    </div>
+</div>
+<div class="mat-elevation-z8" style="display: flex;justify-content: space-between;">
+    <div style=" margin-top: 20px; "> Goto <input type="text" [(ngModel)]="manualPage"
+            (ngModelChange)="updateManualPage($event)" style="width: 35px; margin-left: 5px;"> Page</div>
+    <div>
+        <mat-paginator #paginator class="demo-paginator" (page)="handlePageEvent($event)" [pageSize]="1" [pageIndex]='0'
+            aria-label="Select page">
+        </mat-paginator>
+    </div>
+</div>
+
+
+
+<!-- Table end   -->

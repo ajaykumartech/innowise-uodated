@@ -1,0 +1,79 @@
+mat-raised-button {
+    padding: 0px;
+    margin: 0px;
+    vertical-align: -webkit-baseline-middle;
+}
+
+:host {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.profile {
+    background-color: black;
+    color: #fff;
+    margin-top: -1vh;
+    display: flex;
+    justify-content: center;
+    padding-top: 5px;
+}
+
+.demo-section+.demo-section {
+    margin-top: 16px;
+}
+
+.notification-content {
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    padding: 0.5vh 1vh 0vh 1vh;
+    color: gray;
+    cursor: pointer;
+    border-bottom: 1px solid #e4e3e3;
+    margin-bottom: -0.8vh !important;
+}
+
+
+.notification-title {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.notText {
+    font-size: 14px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 10rem;
+    margin-top: 0.7vh;
+}
+
+.notIcon {
+    color: rgb(38, 166, 209);
+    margin-left: 1lvw;
+    font-size: 12px;
+    margin-top: 1.5vh;
+}
+
+.notification-icon {
+    color: rgb(255, 255, 255);
+    padding-right: 15px;
+    margin-top: 0.6vh;
+    font-size: 20px;
+}
+
+.custom-menu {
+    width: 400px;
+}
+
+.sidee {
+    opacity: 0.8;
+    color: black;
+    font-weight: bold;
+    background-color: rgb(241, 239, 239);
+}
+
+.sicon {
+    color: red;
+}

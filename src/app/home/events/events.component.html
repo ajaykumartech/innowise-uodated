@@ -1,0 +1,57 @@
+<mat-card style="background-color: rgb(246, 246, 246);margin-bottom: 1vh;">
+    <div class="main1">
+        <div style="cursor:pointer;width:150px" routerLink=".../dash">
+            <mat-icon style="color: gray;cursor: pointer;">keyboard_arrow_left</mat-icon> 
+            <mat-icon style="color: #0085FF;margin-left: 1vh;">dashboard</mat-icon>
+        </div>
+        <div style="margin-top: -1vh;">
+            <mat-form-field appearance="outline" style="width: 150px;">
+                <mat-icon matTextPrefix style="vertical-align: middle;padding-right: 5px;font-size: 20px;color: #0085FF;">assignment</mat-icon>
+                <mat-select [(ngModel)]="value" style="font-size: 15px;">
+                    <mat-option value="Task">
+                        Task
+                    </mat-option>
+                    <mat-option value="Workflow">
+                        Workflow
+                    </mat-option>
+                </mat-select>
+            </mat-form-field>
+        </div>
+
+
+        <div>
+            <div style="display:flex">
+                <mat-icon style="vertical-align: middle;margin:5px 15px 0px 5px;color:gray"> live_help</mat-icon>
+                <app-profile></app-profile>
+            </div>
+        </div>
+           
+       </div>
+
+    <div class="main2">
+        <mat-icon style="color: gray;font-size: 25px;margin: 0.7vh 0.5vh 0px 0.5vh;vertical-align: middle;">home</mat-icon><span class="home">Home</span>
+        <div class="selec">
+            <mat-form-field appearance="outline" style="width: 150px;">
+                <mat-icon matTextPrefix style="vertical-align: middle;padding-right: 5px;font-size: 20px;color: gray;">check_circle</mat-icon>
+                <mat-select [(ngModel)]="value" style="font-size: 15px;">
+                    <mat-option value="Task">
+                        Task
+                    </mat-option>
+                    <mat-option value="Workflow">
+                        Workflow
+                    </mat-option>
+                </mat-select>
+            </mat-form-field>
+        </div>
+        <mat-icon style="color:gray;margin-top: 0.7vh;">add_circle_outline</mat-icon><span class="add">Add to</span>
+    </div>
+
+    <router-outlet> </router-outlet>
+    <div *ngIf="value=='Task'; else other">
+        <app-my-task></app-my-task>
+    </div>
+    <ng-template #other>
+        <app-my-workflow></app-my-workflow>
+    </ng-template>
+
+</mat-card>

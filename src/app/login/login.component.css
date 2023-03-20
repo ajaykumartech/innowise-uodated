@@ -1,0 +1,453 @@
+input[type="password"]::-ms-reveal, input[type="password"]::-ms-clear
+{ 
+  display: none; 
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+body{
+  display: grid;
+  height: 98vh;
+  place-items: center;
+}
+:host ::ng-deep .customSpinner circle{
+  stroke: #ffffff!important;
+}
+.tttt{
+  background-color: #c4c4c4;
+  height: 4.5vh;
+  width: 40vh;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  padding: 5px;
+}
+.err-msg{
+  color: red;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.8vh;
+  padding-top: 8px;
+  height: 1.5vh;
+}
+.wrapper{
+
+  background-color: #f9f9f9;
+  border-radius: 7px;
+  border: 1px solid #b8b8b8;
+  padding:0vh 1.5vh;
+}
+label{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 2vh;
+  display:flex;
+  padding:10px 0px;
+  
+}
+.title{
+  font-size: 2.5vh;
+  /* font-weight: 600; */
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.wrapper form{
+  padding:0vh 1.2vh;
+}
+.wrapper form .row{
+  margin:0px;
+}
+.wrapper form .row input{
+  width: 40vh;
+  height: 4.5vh;
+  border-radius: 5px;
+  background-color: rgb(255, 255, 255);
+  border: 1px solid #ddd;   
+  padding:5px   
+}
+.headerror{
+  height: 30px;
+  text-align: center;
+}
+.wrapper form .row1 select{
+    width: 40vh;
+     height: 4.5vh;
+     display: flex;
+    border-radius: 5px;
+    background-color: rgb(242, 239, 239);
+    border: 1px solid #ddd;
+}
+h5{
+  /* padding-bottom: 10px; */
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  
+}
+.fa-google {
+  background: conic-gradient(from -45deg, #ea4335 110deg, #4285f4 90deg 180deg, #34a853 180deg 270deg, #fbbc05 270deg) 73% 55%/150% 150% no-repeat;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+}
+.wrapper1{
+  margin: auto;
+  display: flex;
+  justify-content: center;
+}
+.wrapper1 .row i{
+  position:absolute;
+  width: 47px;
+  height: 40px;
+  font-size: 20px;
+  background-color: white;
+  border: 1px solid #4285F4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.wrapper1 .row input{
+  padding-left: 20px;
+  margin-left: 45px;
+  color: white;
+  justify-content: center;
+  height: 40px;
+  background-color: #4285F4;
+  border: 1px solid #4285F4;
+}
+
+.btn{
+  margin-left: 46px;
+  height: 40px;
+  padding: 0px 10px 0px 10px;
+  background-color: #4285F4;
+  color: white;
+  border: 1px solid #4285F4;
+  font-size: 15px;
+  
+}
+a{
+  float: right;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  color: #4E5BD0;
+}
+/* form p{
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1vh;
+} */
+span{
+  color: black;
+  padding: 0px 5px 0px 5px;
+  font-size: 20px;
+}
+.btn2{
+  background-color: white;
+  border-radius: 5px;
+  height: 40px;
+  border: 1px solid black;
+  font-size: 15px;
+  font-weight: bold;
+  width: 200px;
+}
+.btn3{
+  height: 40px;
+  font-size: 15px;
+  border: 1px solid #8C8C8C;
+  color: #5E5E5E;
+  margin-bottom: 25px;
+  width: 200px;
+}
+.fa-microsoft{
+  background: conic-gradient( #7FBA00 0deg 90deg, #FFB900 90deg 180deg, #00A4EF 180deg 270deg, #F25022 270deg 360deg ) no-repeat;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+}
+.main-div{
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.fa-times-circle{
+  color: #fc0505; 
+  display: inline-block;
+  position: absolute;
+  right:35px;
+  margin-top: 10px;
+}
+.fa-eye{
+  font-size: 1.8vh;
+  color: #AAAAAA; 
+  display: inline-block;
+  position: absolute;
+ 
+  margin-top: 10px;
+}
+.fa-eye-slash{
+  font-size: 1.8vh;
+  color: #AAAAAA; 
+  display: inline-block;
+  position: absolute;
+ right: 10px;
+  margin-top: 10px;
+}
+
+.input-wrapper {
+  position: relative;
+}
+
+input[type="text"] {
+  padding-right: 2.5rem;
+}
+
+input[type="text"] + i {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 0.1rem;
+  cursor: pointer;
+  padding:5px;
+  border-radius: 25px;
+  margin-top: 2px;
+}
+
+.mat-raised-button{
+  float: right;
+  margin-top: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: larger;
+  color: black;
+}
+.validation{
+  color: red;
+  font-size: small;
+  font-family: Arial, Helvetica, sans-serif;
+  padding-right: 100px;
+  margin: 0;
+  text-align: left;
+}
+.validations{
+color: red;
+font-family: Arial, Helvetica, sans-serif;
+font-size: 1.8vh;
+}
+
+.environment{
+  width: 40vh;
+  height: 4vh;
+  border-radius: 5px;
+  background-color: rgb(242, 239, 239);
+  border: 1px solid #ddd;
+  padding-left: 10px;
+}
+
+@media screen and (min-width: 4000px) and (max-height: 3100px) {
+  .wrapper1 .row i{
+    position:absolute;
+    width: 47vh;
+    height: 40px;
+    font-size: 20px;
+    background-color: white;
+    border: 1px solid #4285F4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .wrapper1 .row input{
+    padding-left: 20px;
+    margin-left: 45px;
+    color: white;
+    justify-content: center;
+    height: 40px;
+    background-color: #4285F4;
+    border: 1px solid #4285F4;
+  }
+  .btn2{
+    background-color: white;
+    border-radius: 5px;
+    height: 40px;
+    border: 1px solid black;
+    font-size: 1.5vh;
+    font-weight: bold;
+    width: 20vh;
+    height:4.5vh;
+  }
+  .wrapper{
+    background-color: #f9f9f9;
+    border-radius: 7px;
+    border: 1px solid #b8b8b8;
+    padding:2vh;
+    height:1950px
+  }
+  .wrapper form .headerror{
+    height: 80px;
+    padding:5px;
+    text-align: center;
+  }
+
+  .input-wrapper i{
+    position: absolute;
+    
+  }
+  .fa-times-circle{
+    color: #fc0505; 
+    display: inline-block;
+    position: relative;
+    margin-top: 50px;
+    font-size: 1.8vh;
+  }
+  
+  .fa-eye, .fa-eye-slash{
+    font-size: 1.8vh;
+    color: #7e7c7c; 
+     display: inline-block;
+    position: absolute;
+    margin-top: 50px;
+  }
+ .mat-raised-button{
+  width:10vh;
+  height:3vh;
+  float: right;
+  margin: 30px 0px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 1.8vh;
+
+
+}
+p{
+  font-size: 1.8vh;
+  position: relative;
+  text-align: center;
+}
+
+ .wrapper form .row label{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.8vh;
+  display:flex;
+
+  }
+
+  .wrapper form .headerror .validation{
+    color: red;
+    font-size: 1.8vh;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+   height:25px;
+   margin:10px 0px;
+  }
+  .validations{
+  color: red;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.8vh;
+  text-align: left;
+  margin: 2px 0px;
+  }
+  
+  .title{
+   font-size: 2.5vh;
+    text-align: center;
+    margin: 50px 0px;
+  }
+  
+  
+  .wrapper form{
+  padding:2vh;
+  margin-bottom: 80px;
+  }
+  
+  .wrapper form .row{
+      margin:0px;
+   }
+  
+   .wrapper form .row a{
+   
+    padding:5px;
+    font-size: 1.8vh;
+  }
+  
+  .wrapper form .row input{
+    width: 40vh;
+    height: 4.5vh;
+    border-radius: 5px;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid #ddd;   
+    margin:10px 0px;
+  }
+  
+  .environment{
+    width: 40vh;
+    height: 4vh;
+    border-radius: 5px;
+    background-color: rgb(242, 239, 239);
+    border: 1px solid #ddd;
+    font-size: 1.8vh;
+  }
+  
+ ::ng-deep .mat-select-arrow {
+  font-size: 20px;
+}
+
+  select{
+       width: 15vh;
+    position:relative;
+  }
+  option{
+    width: 20vh;
+    height: 2vh;
+    font-size: 1.8vh;
+  }
+  
+  .wrapper form .row1 label{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.8vh;
+    display:flex;
+    margin:10px 0px;
+    height:50px;
+    
+  }
+  
+  .wrapper form .row input {
+    font-size: 1.8vh;
+    margin:20px 0px;
+    padding:5px;
+  }
+  
+  .wrapper form .row .validation{
+    height:55px;
+  }
+
+ .wrapper form a{
+ 
+  font-size: 1.8vh;
+  margin:-15px 0px;
+}
+.headerror{
+  font-size: 5.8vh;
+  color:rgb(247, 5, 5);
+  height:40px;
+  margin:15px 0px;
+}
+
+.sec-div{
+  margin:20px 0px;
+  position: relative;
+}
+
+.logbtn{
+  position:relative ;
+  height: 100px;
+  border-radius: 15px;
+  padding:5px;
+}
+
+}

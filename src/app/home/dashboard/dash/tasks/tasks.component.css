@@ -1,0 +1,283 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.third-card {
+    margin-bottom: 0.2em;
+    height: 400px;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+.mat-header {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.tasks1-div {
+    display: flex;
+
+}
+
+.progress-tasks {
+    text-align: center;
+    padding-right: 25px;
+
+}
+
+.button-stoked {
+    float: right;
+    margin-left: 5em;
+}
+
+
+div[role="progressbar"] {
+    --size: 5rem;
+    --fg: #0085FF;
+    --bg: #E6F3FF;
+    --pgPercentage: var(--value);
+    animation: growProgressBar 3s 1 forwards;
+    width: var(--size);
+    height: var(--size);
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    background:
+        radial-gradient(closest-side, white 80%, transparent 0 99.9%, white 0),
+        conic-gradient(var(--fg) calc(var(--pgPercentage) * 1%), var(--bg) 0);
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: calc(var(--size) / 5);
+    color: var(--fg);
+}
+
+@keyframes growProgressBar {
+
+    0%,
+    33% {
+        --pgPercentage: 0;
+    }
+
+    100% {
+        --pgPercentage: var(--value);
+    }
+}
+
+div[role="progressbar"]::before {
+    counter-reset: percentage var(--value);
+    content: counter(percentage) '%';
+}
+
+@property --pgPercentage {
+    syntax: '<number>';
+    inherits: false;
+    initial-value: 0;
+}
+
+
+/* screen for laptop and ipad */
+@media only screen and (min-width: 480px)and (max-width:768px) {
+
+    .tasks1-div {
+        display: flex;
+    }
+
+
+    .row {
+        display: flow-root;
+        height: auto;
+    }
+
+    .col {
+        height: auto;
+        margin: 5px;
+    }
+
+    .third-card {
+        width: auto;
+        height: auto;
+    }
+
+    .mat-header {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .button-stoked {
+        float: right;
+        margin-left: 8em;
+    }
+
+    .headcheck {
+        width: auto;
+    }
+
+    .headuncheck {
+        width: auto;
+    }
+}
+
+/* screens min-width(768-1024px) */
+@media only screen and (min-width: 768px)and (max-width:1024px) {
+
+    .row {
+        display: flow-root;
+        height: auto;
+    }
+
+    .col {
+        margin: 5px;
+        height: auto;
+    }
+
+    .third-card {
+        width: auto;
+        height: auto;
+    }
+
+    .mat-header {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .button-stoked {
+        float: right;
+        margin-left: 12em;
+    }
+
+}
+
+@media only screen and (min-width: 1024px)and (max-width:1350px) {
+
+    .row {
+        display: flex;
+        height: auto;
+    }
+
+    .col {
+        margin: 5px;
+        height: auto;
+    }
+
+    .third-card {
+        width: auto;
+        height: 100%;
+        display: flex;
+    }
+
+    .mat-header {
+        display: flex;
+        justify-content: space-between;
+
+    }
+
+    .button-stoked {
+        float: right;
+        margin-left: 5em;
+        font-size: 1.4vh;
+    }
+
+    .headcheck {
+        width: auto;
+    }
+
+    .headuncheck {
+        width: auto;
+    }
+}
+
+
+
+
+
+
+/* screen for laptop and ipad */
+@media only screen and (min-width: 1350px)and (max-width:2000px) {
+
+    .row {
+        display: flow-root;
+        height: auto;
+    }
+
+    .col {
+        height: auto;
+        margin: 5px;
+    }
+
+    .third-card {
+        width: auto;
+        height: 100%;
+    }
+
+    .mat-header {
+        display: flex;
+        justify-content: space-between;
+        height: auto;
+    }
+
+    .button-stoked {
+        float: right;
+        margin-left: 8em;
+    }
+
+    .headcheck {
+        width: auto;
+    }
+
+    .headuncheck {
+        width: auto;
+    }
+}
+
+/* Small mobile screens */
+@media only screen and (min-width: 280px)and (max-width:480px) {
+
+    .row {
+        display: flow-root;
+    }
+
+    .col {
+        height: auto;
+        margin: 5px;
+    }
+
+    .third-card {
+        width: auto;
+        height: auto;
+    }
+
+    .mat-header {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .button-stoked {
+        float: right;
+        margin-left: 5em;
+    }
+
+    .headcheck {
+        width: auto;
+    }
+
+    .headuncheck {
+        width: auto;
+    }
+
+    .progress-tasks {
+        text-align: center;
+        padding-right: 25px;
+    }
+
+    .tasks1-div {
+        display: flow-root;
+    }
+
+    .progress-tasks {
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        margin: 10px 80px 10px 80px;
+    }
+}

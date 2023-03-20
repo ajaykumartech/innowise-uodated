@@ -1,0 +1,9 @@
+<div style="margin-right: 1vh;">
+    <mat-form-field appearance="outline" style="width: 135px;">
+        <mat-icon matTextPrefix style="vertical-align: middle;padding-right: 5px;">filter_list</mat-icon>
+        <mat-select name="filter" style="padding-top: 0.5vh;" multiple (selectionChange)="shareCheckedlist($event.value)"
+            [(ngModel)]="list2">
+            <mat-option *ngFor="let topping of list" [value]="topping">{{topping}}</mat-option>
+        </mat-select>
+    </mat-form-field>
+</div>

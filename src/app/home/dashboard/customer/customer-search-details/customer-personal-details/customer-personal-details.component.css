@@ -1,0 +1,68 @@
+.cust-person{
+    display: flex; 
+    margin-top:20px;
+    width:100%;
+    justify-content: space-between;  
+}
+.buttons{
+    display: flex; 
+    float:right;
+    justify-content: space-between;  
+}
+
+.ico-name{
+    display: flex;
+}
+
+
+@media only screen and (min-width: 428px)and (max-width:768px) {
+    .cust-person{
+        display: flow-root; 
+        margin-top:20px;
+        width:100%;
+        justify-content: space-between;  
+    }
+    .buttons{
+        display: flex; 
+        float:right;
+        justify-content: space-between;  
+        margin:10px 0px;
+    }
+    
+    .ico-name{
+        display: flex;
+        margin:10px 0px;
+    }
+    
+}
+
+
+@media only screen and (min-width: 218px)and (max-width:428px) {
+    .cust-person{
+        display: flow-root; 
+        margin-top:20px;
+        width:100%;
+        justify-content: space-between;  
+    }
+    .buttons{
+        display: flex; 
+        float:right;
+        justify-content: space-between;  
+        margin:10px 0px;
+    }
+    
+    .ico-name{
+        display: flex;
+        margin:10px 0px;
+    }
+    
+}
+@media only screen and (min-width: 768px)and (max-width:1024px) {
+    .cust-person{
+        display: flex; 
+        margin-top:20px;
+        width:100%;
+        justify-content: space-between;  
+    }
+
+}

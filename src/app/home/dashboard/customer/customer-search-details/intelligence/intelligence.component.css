@@ -1,0 +1,52 @@
+.matcard {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    height: 350px;
+    display: inline-block;
+    overflow: hidden;
+    margin: 10px;
+    box-shadow: none;
+    border: 1px solid #DDDDDD;
+    border-radius: 10px;
+    margin-bottom: 30vh;
+}
+
+.card-image {
+    border: 1px solid #DDDDDD;
+    border-radius: 5px;
+    align-items: center;
+    /* padding-top: 10px;  */
+}
+
+img {
+    height: 50px;
+    width: 50px;
+    margin: 10px 10px;
+}
+
+.card-text {
+    color: black;
+    text-align: center;
+    margin-top: 10px;
+    font-size: 30px;
+}
+
+.card-subtitle {
+    margin: 10px 0;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: medium;
+    color: #6B6F7A;
+    text-align: center;
+    font-size: medium;
+}
+
+.button-container {
+    background-color: #0085FF;
+    display: flex;
+    text-align: center;
+    font-weight: 600px;
+    color: white;
+
+}
