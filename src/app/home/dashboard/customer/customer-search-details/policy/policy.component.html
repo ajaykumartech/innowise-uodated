@@ -1,11 +1,11 @@
 <div class="third-row">
 
-    <div style="display:flex;margin:10px 0px;">
+    <div class="button-tabs">
 
  
     <!-- Calender  -->
-    <div style="font-size: 10px;">
-        <mat-form-field class="example-form-field" appearance="outline">
+    <div class="cale">
+        <mat-form-field class="example-form-field" appearance="outline" style="width: 220px; height: 1vh;">
             <mat-date-range-input [formGroup]="campaignTwo" [rangePicker]="campaignTwoPicker"
                 [comparisonStart]="campaignTwo.value.start" [comparisonEnd]="campaignTwo.value.end">
                 <input matStartDate placeholder="Start date" formControlName="start">
@@ -17,8 +17,8 @@
         </mat-form-field>
     </div>
     <!-- Filter -->
-    <div>
-        <mat-form-field appearance="outline" style="width: 150px; height: 1vh;margin-left: 2vh">
+    <div class="filter">
+        <mat-form-field appearance="outline" style="width: 150px; height: 1vh">
             <div style="padding: 0;display: flex;">
                 <mat-select placeholder="Filter by" (selectionChange)="getselectedValue3($event.value)" name="filter"
                     multiple [(ngModel)]="Filter3Selected">
@@ -31,7 +31,7 @@
     </div>
     <!-- Export Button -->
 
-    <div class="matt-button" style="margin-left:20px;">
+    <div class="matt-button">
         <button mat-raised-button style="
             background-color: #0085FF;
             border-radius: 5px;
@@ -111,12 +111,12 @@ The actual rendered columns are set as a property on the row definition" -->
             <ng-container matColumnDef="Status" >
                 <th mat-header-cell *matHeaderCellDef> Status </th>
                 <td mat-cell *matCellDef="let element">
-                    <p *ngIf="element.Status.Color!='Red'; else elseblock" style="color: rgb(22, 253, 22);">
+                    <p *ngIf="element.Status.Color!='Red'; else elseblock" style="color: rgb(22, 253, 22);text-align: center;">
                       <mat-icon class="notIcon">fiber_manual_record</mat-icon>
                     </p>
                     <ng-template #elseblock>
                         
-                        <p style="color: red;"><mat-icon class="notIcon">fiber_manual_record</mat-icon></p>
+                        <p style="color: red;text-align: center;"><mat-icon class="notIcon">fiber_manual_record</mat-icon></p>
                     </ng-template>
                 </td>
             </ng-container>
@@ -150,7 +150,7 @@ The actual rendered columns are set as a property on the row definition" -->
 
     <div>
         Goto <input type="text" [(ngModel)]="manualpage" (ngModelChange)="updateManualPage($event)"
-            style="width: 35px; margin-left: 5px;margin-bottom: 4vh;"> Page of {{totalpages}}
+            style="width: 35px; margin:15px 0px 4vh 5px;"> Page of {{totalpages}}
         <!-- Bottom Paginator -->
         <!-- <div class="paginator">
             <mat-paginator #paginator [pageSize]="5" [pageIndex]='0' (page)="handlePageEvent($event)"

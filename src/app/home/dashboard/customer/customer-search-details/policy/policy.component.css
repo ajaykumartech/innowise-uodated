@@ -1,10 +1,9 @@
 .third-row{
     display: flex;
-    margin-top: 0.2vh;
+    margin-top: 20px;
     width:100%;
     justify-content: space-between;
     padding-bottom: 2vh;
-    margin-top: 15px;
 }
 
 .mat-mdc-text-field-wrapper{
@@ -24,20 +23,14 @@ th{
 }
 
 td,p{
-    padding:0px;
+    padding:0p 5px;
     margin:0px;
 }
 ng-container{
     padding:0px;
     margin:0px;
 }
-.mat-button{
-    background-color: #0085FF;
-    border-radius: 5px;
-    color: white;
-    width: 150px;
-    display:flex;
-}
+
 
 .res-table{
     width:auto;
@@ -73,6 +66,22 @@ ng-container{
     height: 49vh;
 }
 
+.button-tabs{
+    display:flex;
+    
+}
+.cale{
+    font-size: 10px;
+    margin:10px 0px 5px 2vh ;
+}
+
+.filter{
+    margin:10px 0px 5px 2vh
+}
+
+.matt-button{
+    margin:10px 0px 5px 2vh
+}
 @media only screen and (min-width: 238px)and (max-width:428px) {
     .third-row{
       width:auto;
@@ -93,6 +102,7 @@ ng-container{
         color: white;
         width: 150px;
         display:flow-root;
+        margin:10px 0px;
     }
     .button-class{
         position: absolute;
@@ -109,6 +119,26 @@ ng-container{
         color: white;
         
     }
+
+    .button-tabs{
+        display:flow-root; 
+        height:auto;
+    }
+    .cale{
+        font-size: 10px;
+        margin:10px 20px 5px 2vh ;
+       
+    }
+    
+    .filter{
+        margin:20px 20px 5px 2vh ;
+        padding: 15px 0px;
+    }
+    
+    .matt-button{
+        margin:20px 10px 5px 2vh ;
+    }
+   
 }
 @media only screen and (min-width: 428px)and (max-width:768px) {
     .third-row{
@@ -148,10 +178,29 @@ ng-container{
         color: white;
         
     }
+    .button-tabs{
+        display:flow-root; 
+        height:auto;
+    }
+    .cale{
+        font-size: 10px;
+        margin:10px 10px 5px 2vh ;
+       
+    }
+    
+    .filter{
+        margin:10px 10px 5px 2vh ;
+        padding: 15px 0px;
+    }
+    
+    .matt-button{
+        margin:10px 10px 5px 2vh ;
+    }
 }
 
 
-@media only screen and (min-width: 768px)and (max-width:1024px) {
+
+@media only screen and (min-width: 768px)and (max-width:900px) {
     .third-row{
       width:auto;
       overflow-x:scroll ; 
@@ -181,8 +230,132 @@ ng-container{
         color: white;
         
     }
+    .button-tabs{
+        display:flex; 
+        height:auto;
+    }
+    .cale{
+        font-size: 10px;
+        margin:10px 10px 5px 2vh ;
+       
+    }
+    
+    .filter{
+        margin:10px 10px 5px 2vh ;
+        
+    }
+    
+    .matt-button{
+        margin:10px 10px 5px 2vh ;
+    }
 }
 
+@media only screen and (min-width: 800px)and (max-width:990px) {
+    .third-row{
+      width:auto;
+      overflow-x:scroll ; 
+      display: flow-root;
+    }
+    .table-class{
+        width:auto;
+        overflow-x:scroll
+    }
+    .mat-elevation-z8{
+        width:auto;
+      
+    }
+    .mat-button{
+        background-color: #0085FF;
+        border-radius: 5px;
+        color: white;
+        width: 150px;
+        display:flow-root;
+        margin:10px 0px;
+    }
+    .button-class{
+        position: absolute;
+        top: calc(100% + 50px);
+        left: 50%;
+        transform: translateX(-100%);
+        z-index: 999;
+        background-color: white;
+        box-shadow: 2px;
+        border: 1px solid rgb(230, 230, 230);
+    }
+    .button:hover{
+        background-color: rgb(0, 183, 255);
+        color: white;
+        
+    }
+
+    .button-tabs{
+        display:flow-root !important; 
+        height:auto;
+    }
+    .cale{
+        font-size: 10px;
+        margin:10px 20px 5px 2vh ;
+       
+    }
+    
+    .filter{
+        margin:20px 20px 5px 2vh ;
+        padding: 15px 0px;
+    }
+    
+    .matt-button{
+        margin:20px 10px 5px 2vh ;
+    }
+   
+}
+@media only screen and (min-width: 900px)and (max-width:1024px) {
+    .third-row{
+      width:auto;
+      overflow-x:scroll ; 
+      display: flow-root;
+    }
+    .table-class{
+        width:auto;
+        overflow-x:scroll;
+        overflow-y: scroll;
+    }
+    .mat-elevation-z8{
+        width:auto;
+      
+    }
+    .button-class{
+        position: absolute;
+        top: calc(50% + 0px);
+        left: 50%;
+        transform: translateX(-100%);
+        z-index: 999;
+        background-color: white;
+        box-shadow: 2px;
+        border: 1px solid rgb(230, 230, 230);
+    }
+    .button:hover{
+        background-color: rgb(0, 183, 255);
+        color: white;
+        
+    }
+    .button-tabs{
+        display:flex; 
+        height:auto;
+    }
+    .cale{
+        font-size: 10px;
+        margin:10px 10px 5px 2vh ;
+       
+    }
+    
+    .filter{
+        margin:10px 10px 5px 2vh ;
+    }
+    
+    .matt-button{
+        margin:10px 10px 5px 2vh ;
+    }
+}
 
 @media only screen and (min-width: 1024px)and (max-width:1350px) {
     .third-row{
@@ -217,6 +390,23 @@ ng-container{
         color: white;
         
     }
+    .button-tabs{
+        display:flex; 
+        height:auto;
+    }
+    .cale{
+        font-size: 10px;
+        margin:10px 10px 5px 2vh ;
+       
+    }
+    
+    .filter{
+        margin:10px 10px 5px 2vh ;
+    }
+    
+    .matt-button{
+        margin:10px 10px 5px 2vh ;
+    }
 }
 
 @media only screen and (min-width: 1350px)and (max-width:2000px) {
@@ -244,5 +434,22 @@ ng-container{
         background-color: rgb(0, 183, 255);
         color: white;
         
+    }
+    .button-tabs{
+        display:flex; 
+        height:auto;
+    }
+    .cale{
+        font-size: 10px;
+        margin:10px 10px 5px 2vh ;
+       
+    }
+    
+    .filter{
+        margin:10px 10px 5px 2vh ;
+    }
+    
+    .matt-button{
+        margin:10px 10px 5px 2vh ;
     }
 }
