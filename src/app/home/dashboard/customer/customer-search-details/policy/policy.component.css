@@ -50,8 +50,8 @@ ng-container{
     position: absolute;
     top: calc(100% + 50px);
     left: 250%;
-    transform: translate-X(-400%);
-    z-index: -999;
+    transform: translateX(-450%);
+    z-index: 999;
     background-color: white;
     box-shadow: 2px;
     border: 1px solid rgb(230, 230, 230);
@@ -104,10 +104,11 @@ ng-container{
         margin:10px 0px;
     }
     .button-class{
-        position: absolute;
-        top: calc(100% + 50px);
-        left: 50%;
-        transform: translateX(-100%);
+        position: absolute !important;
+        top: calc(auto + 30px) !important;
+        left: 60%  !important;
+        transform: translateX(-80%);
+        transform: translateY(150%);
         z-index: 999;
         background-color: white;
         box-shadow: 2px;
@@ -162,10 +163,11 @@ ng-container{
     }
 
     .button-class{
-        position: absolute;
-        top: calc(80% + 50px);
-        left: 50%;
-        transform: translateX(-50%);
+        position: absolute !important;
+        top: calc(auto + 30px) !important;
+        left: 70%  !important;
+        transform: translateX(-80%);
+        transform: translateY(150%);
         z-index: 999;
         background-color: white;
         box-shadow: 2px;
@@ -214,9 +216,9 @@ ng-container{
     }
     .button-class{
         position: absolute;
-        top: calc(50% + 0px);
-        left: 50%;
-        transform: translateX(-100%);
+        top: calc(100% + 0px);
+        left: 200% !important;
+        transform: translateX(-150%);
         z-index: 999;
         background-color: white;
         box-shadow: 2px;
@@ -247,7 +249,7 @@ ng-container{
     }
 }
 
-@media only screen and (min-width: 800px)and (max-width:990px) {
+@media only screen and (min-width: 800px)and (max-width:900px) {
     .third-row{
       width:auto; 
       display: flow-root;
@@ -268,11 +270,21 @@ ng-container{
         display:flow-root;
         margin:10px 0px;
     }
-    .button-class{
+    /* .button-class{
         position: absolute;
         top: calc(100% + 50px);
         left: 50%;
         transform: translateX(-100%);
+        z-index: 999;
+        background-color: white;
+        box-shadow: 2px;
+        border: 1px solid rgb(230, 230, 230);
+    } */
+    .button-class{
+        position: absolute !important; ;
+        top: calc(20%+ 10px) !important;
+        left: 80%;
+        transform: translateX(-450%);
         z-index: 999;
         background-color: white;
         box-shadow: 2px;
@@ -318,11 +330,13 @@ ng-container{
         width:auto;
       
     }
+
     .button-class{
         position: absolute;
-        top: calc(50% + 0px);
-        left: 50%;
-        transform: translateX(-100%);
+        top: calc(auto + 20px)!important;
+        left: 180%;
+        transform: translateX(-500%);
+
         z-index: 999;
         background-color: white;
         box-shadow: 2px;
@@ -373,7 +387,7 @@ ng-container{
         position: absolute;
         top: calc(100% + 50px);
         left: 250%;
-        transform: translateX(-400%);
+        transform: translateX(-450%);
         z-index: 999;
         background-color: white;
         box-shadow: 2px;
@@ -414,11 +428,13 @@ ng-container{
     .mat-elevation-z8{
         width:auto;
     }
+ 
+
     .button-class{
         position: absolute;
         top: calc(100% + 50px);
-        left: 250%;
-        transform: translateX(-400%);
+        left: 200%;
+        transform: translateX(-450%);
         z-index: 999;
         background-color: white;
         box-shadow: 2px;

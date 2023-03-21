@@ -112,7 +112,7 @@ export class PolicyComponent {
     const iconElement = event.currentTarget as HTMLElement;
     // console.log("iconelement: ", iconElement)
     const iconRect = iconElement.getBoundingClientRect();
-    this.overlayTop = iconRect.top;
+    this.overlayTop = iconRect.top-250;
     this.overlayLeft = iconRect.left;
     this.openOverlay = true;
 
