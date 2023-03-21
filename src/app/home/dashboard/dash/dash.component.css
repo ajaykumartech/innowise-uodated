@@ -5,6 +5,10 @@
     margin-left: 5%;
 }
 
+.matt-card{
+    height: 90% !important;;
+}
+
 .row {
     display: flex;
     width: 95%;

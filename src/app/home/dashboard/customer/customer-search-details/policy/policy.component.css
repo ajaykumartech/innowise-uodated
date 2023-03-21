@@ -85,16 +85,15 @@ ng-container{
 @media only screen and (min-width: 238px)and (max-width:428px) {
     .third-row{
       width:auto;
-      overflow-x:scroll ; 
       display: flow-root;
     }
     .table-class{
         width:auto;
-        overflow-x:scroll
+        overflow-x:scroll;
+        overflow-y:scroll;
     }
     .mat-elevation-z8{
         width:auto;
-      
     }
     .mat-button{
         background-color: #0085FF;
@@ -143,7 +142,6 @@ ng-container{
 @media only screen and (min-width: 428px)and (max-width:768px) {
     .third-row{
       width:auto;
-      overflow-x:scroll ; 
       display: flow-root;
     }
     .table-class{
@@ -203,7 +201,6 @@ ng-container{
 @media only screen and (min-width: 768px)and (max-width:900px) {
     .third-row{
       width:auto;
-      overflow-x:scroll ; 
       display: flow-root;
     }
     .table-class{
@@ -252,8 +249,7 @@ ng-container{
 
 @media only screen and (min-width: 800px)and (max-width:990px) {
     .third-row{
-      width:auto;
-      overflow-x:scroll ; 
+      width:auto; 
       display: flow-root;
     }
     .table-class{
@@ -311,7 +307,6 @@ ng-container{
 @media only screen and (min-width: 900px)and (max-width:1024px) {
     .third-row{
       width:auto;
-      overflow-x:scroll ; 
       display: flow-root;
     }
     .table-class{
@@ -359,8 +354,7 @@ ng-container{
 
 @media only screen and (min-width: 1024px)and (max-width:1350px) {
     .third-row{
-      width:auto;
-      overflow-x:scroll ; 
+      width:auto; 
       display: flow-root;
     }
     .table-class{

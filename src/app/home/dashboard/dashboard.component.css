@@ -3,9 +3,9 @@
   border: 1px solid rgb(233, 232, 232) !important;
   border-radius: 15px !important;
   padding-top: 1vh;
-  margin: 1.5vh 0px;
+  margin: 1.5vh 10px;
   width: 280px;
-  height: 100vh;
+  height: auto;
   -webkit-box-shadow: -2px -1px 21px -4px rgba(3, 3, 3, 1);
   -moz-box-shadow: -2px -1px 21px -4px rgba(3, 3, 3, 1);
 }
@@ -68,6 +68,7 @@ mat-sidenav-container {
   position: relative;
   flex-direction: row;
   height: 100%;
+
 }
 
 @media only screen and (min-width: 3500px)and (max-width:4500px) {
